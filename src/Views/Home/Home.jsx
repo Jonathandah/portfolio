@@ -1,14 +1,19 @@
-import React from "react";
-import "./Home.sass";
-import { motion } from "framer-motion";
-import Vivus from "vivus";
+import React from 'react';
+import './Home.sass';
+import { motion } from 'framer-motion';
+import Vivus from 'vivus';
 // import { ReactComponent as Welcome } from "./svg/W.svg";
 
 function Home() {
   return (
-    <div className="Home">
-      <section className="Home__section--welcome">
-        <motion.div
+    <div className='Home'>
+      <section className='Home__section--welcome'>
+        <div className='section__container'>
+          <p className='container__text'>Welcome</p>
+          <div className='container__text--dot'></div>
+        </div>
+
+        {/* <motion.div
           className="section__container"
           // animate={{ width: "50%",height:"100%", x: "-50%" }}
           // transition={{ duration: 1, delay: 4, ease: "easeOut" }}
@@ -42,7 +47,7 @@ function Home() {
             }}
             transition={{ duration: 1.5, delay: 1.25, ease: "easeOut" }}
           ></motion.div>
-        </motion.div>
+        </motion.div> */}
       </section>
     </div>
   );

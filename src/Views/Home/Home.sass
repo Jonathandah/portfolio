@@ -20,23 +20,73 @@
             justify-content: flex-end
             align-items: flex-end
             overflow: hidden
+            width: 388px
+            height: 80px
+            animation: showOverflow 0.1s
+            animation-delay: 4.2s
+            animation-fill-mode: forwards
             .container__text
+                transform: translate3d(0,100%,0)
                 font-size: 90px
                 color: #000000
                 height: 88px
-                z-index: 200
+                animation: moveWelcome 4s
+                animation-delay: 0.5s
+                animation-fill-mode: forwards
+                display: block
             .container__text--dot
+                animation: moveDotXaxis 2.2s
+                animation-delay: 4.1s
+                animation-fill-mode: forwards
+            .container__text--dot::after
+                transform: translate3d(0,100%,0)
+                display: block
+                content: ""
                 width: 14px
                 height: 14px
                 background: #1DBF73
                 border-radius: 50%
-                // right: 0
-                // margin: 20px
-      
-            
-               
-  
+                animation: moveDotYaxis 4s
+                animation-delay: 1.7s
+                animation-fill-mode: forwards
 
+    @keyframes moveDotXaxis
+
+        100%
+            animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64)
+            transform: translateX(-193px)
+
+    @keyframes moveDotYaxis
+        0%
+            animation-timing-function: ease-out
+            transform: translate3d(0,100%,0)
+
+        20%,30%,40%,50%
+            animation-timing-function: linear
+            transform: translate3d(0, 0, 0)
+
+        70%
+            animation-timing-function: linear
+            transform: translateY(225px)
+        100%
+            animation-timing-function: cubic-bezier(0.5,-0.1, 0.25, 1)
+            transform: translate3d(0, -40px, 0)
+            // width: 100%
+            // height: 100%
+
+    @keyframes moveWelcome
+        0%
+            animation-timing-function: cubic-bezier(0.5,-0.1, 0.25, 1)
+            transform: translate3d(0,100%,0)
+        40%,60%
+            animation-timing-function: cubic-bezier(0.69, 0.15, 0.22, 0.84)
+            transform: translate3d(0, 0, 0)
+        90%,100%
+            transform: translate3d(0, -100%, 0)
+            visibility: hidden
+
+    @keyframes showOverflow
+        from,to
+            overflow: visible
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap')
-  
