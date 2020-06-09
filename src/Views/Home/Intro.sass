@@ -1,11 +1,7 @@
 .Intro
-    position: relative
-    width: 92%
-    height: 88vh
     display: flex
     justify-content: center
     align-items: center
-    overflow: hidden
     background: #E2E2E2
     .Intro__background
         position: absolute
@@ -16,8 +12,8 @@
         bottom: -100%
         animation: growBackground 1s cubic-bezier(0.22, 0.61, 0.36, 1)
         animation-delay: 2.5s
-            // animation: growBackground2 3.25s
-            // animation-delay: 0.5s
+        // animation: growBackground2 3.25s
+        // animation-delay: 0.5s
         animation-fill-mode: forwards
     .Intro__container
         font-size: 5vmin
@@ -87,14 +83,15 @@
         bottom: -100%
 
     20%
-        bottom: -35%
+        bottom: -60%
 
     40%
-        bottom: -30%
+        bottom: -20%
         animation-timing-function: cubic-bezier(0.060, 0.975, 0.195, 0.985)
     100%
         bottom: 0%
-        animation-timing-function: cubic-bezier(0.060, 0.975, 0.195, 0.985)
+
+
 @keyframes showTopText
     0%
         transform: translate3d(0, 100%, 0)
