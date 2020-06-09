@@ -1,16 +1,22 @@
-import React from 'react';
-import './Home.sass';
-import { motion } from 'framer-motion';
-import Vivus from 'vivus';
+import React from "react";
+import "./Home.sass";
+import { motion } from "framer-motion";
+import Vivus from "vivus";
 // import { ReactComponent as Welcome } from "./svg/W.svg";
 
 function Home() {
   return (
-    <div className='Home'>
-      <section className='Home__section--welcome'>
-        <div className='section__container'>
-          <p className='container__text'>Welcome</p>
-          <div className='container__text--dot'></div>
+    <div className="Home">
+      <section className="Home__section--welcome">
+        <div className="section__container">
+          {/* <div className="container__firstSection">
+            <span className="firstSection__text">Welcome</span>
+            <span className="firstSectionr__text--dot"></span>
+          </div> */}
+          <div className="container__secondSection">
+            <span className="secondSection__text">mimicking</span>
+            <span className="secondSection__text">apple's design</span>
+          </div>
         </div>
 
         {/* <motion.div
