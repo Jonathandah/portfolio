@@ -9,7 +9,7 @@ import Skills from "./components/Skills/Skills";
 function Home() {
   return (
     <div className="Home">
-      <Intro />
+      {/* <Intro /> */}
       <Skills />
     </div>
   );
