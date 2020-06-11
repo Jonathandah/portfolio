@@ -2,6 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.sass";
 import Home from "./Views/Home/Home";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+ 
+library.add(fab)
 
 function App() {
   return (
