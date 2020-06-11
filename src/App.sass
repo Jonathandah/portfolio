@@ -14,7 +14,6 @@
     height: 60px
     z-index: 20
     top: 0
-    background: white
   .App__sidebar
     position: fixed
     width: 60px
@@ -23,9 +22,20 @@
     display: flex
     flex-direction: column
     justify-content: space-evenly
-    align-items: center
-    background: white
+    align-items: flex-end
     z-index: 20
+    .sidebar__box
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      transform: rotate(270deg)
+      color: #000
+      .box__icon
+        font-size: 26px
+        transform: rotate(90deg)
+      .box__text
+        font-size: 20px
   .App__sidebar > *
     &:hover
       cursor: pointer
@@ -33,7 +43,6 @@
     position: relative
     width: -webkit-fill-available
     height: 100%
-    padding: 0 60px 0 60px
     display: flex
     justify-content: center
     align-items: flex-start
@@ -42,6 +51,5 @@
     position: fixed
     width: 100%
     height: 60px
-    background: white
     bottom: 0
     z-index: 20
