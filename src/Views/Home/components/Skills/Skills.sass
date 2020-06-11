@@ -10,42 +10,38 @@
         display: flex
         justify-content: space-between
         align-items: flex-start
-        flex-direction: row
-        .container__picture
+        flex-direction: column
+        .container__title
             position: relative
-            max-width: 30%
-            min-width: 360px
-            height: auto
-            padding: 20px 20px 20px 0
+            width: 100%
+            display: flex
+            flex-direction: column
+            font-size: 120px
+            text-align: end
+            padding-right: 40px
+            box-sizing: border-box
+            span
+                &:nth-of-type(2)
+                    span
+                        color: #1DBF73
         .container__box
             position: relative
             width: 100%
             height: 100%
             display: flex
-            flex-direction: column
-            align-items: flex-end
+            flex-direction: row
+            align-items: flex-start
             justify-content: space-between
-            padding: 20px
             box-sizing: border-box
-            .box__title
-                position: absolute
-                display: flex
-                flex-direction: column
-                font-size: 120px
-                text-align: end
-                span
-                    &:nth-of-type(2)
-                        span
-                            color: #1DBF73
-            .box__bio
-                position: relative
-                width: 100%
-                height: 100%
-                display: flex
-                flex-direction: column
-                justify-content: flex-end
-                .bio__name
+            .box__piece
+                .piece__name
+                    height: 240px
+                    display: flex
+                    align-items: flex-end
+                    justify-content: flex-end
                     padding-bottom: 40px
+                    flex-direction: column
+                    border-right: 1px solid #E3DEDE
                     .name__title
                         padding-bottom: 10px
                     .name__description
@@ -56,6 +52,19 @@
                                 color: #000000
                                 font-style: italic
                                 font-weight: 700
+                .pice__picture
+                    position: relative
+                    max-width: 80%
+                    min-width: 360px
+                    height: auto
+                    padding: 20px 20px 20px 0
+            .box__bio
+                position: relative
+                width: 100%
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
                 .bio__about
                     width: 830px
                     .about__text

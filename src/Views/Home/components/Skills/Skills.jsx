@@ -1,27 +1,29 @@
 import React from 'react';
 import './Skills.sass';
-import pic from './Profile_pic.png';
+import pic from './profile-pic.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Skills() {
   return (
     <section className='Skills'>
       <div className='Skills__container'>
-        <img className='container__picture' src={pic} alt='Me sitting on a cliff'></img>
+        <h1 className='container__title'>
+          <span>About</span>
+          <span>
+            me<span>.</span>
+          </span>
+        </h1>
         <div className='container__box'>
-          <h1 className='box__title'>
-            <span>About</span>
-            <span>
-              me<span>.</span>
-            </span>
-          </h1>
-          <div className='box__bio'>
-            <section className='bio__name'>
+          <div className='box__piece'>
+            <section className='piece__name'>
               <h2 className='name__title'>Jonathan Dahnberg</h2>
               <p className='name__description'>
                 A young frontend developer trying to achive <span>stuff</span>.
               </p>
             </section>
+            <img className='piece__picture' src={pic} alt='Me sitting on a cliff'></img>
+          </div>
+          <div className='box__bio'>
             <section className='bio__about'>
               <p className='about__text'>
                 <span>Hi! </span>
@@ -60,8 +62,8 @@ function Skills() {
             <div className='item__box'>
               <h1 className='box__title'>ReactJS</h1>
               <p className='box__info'>
-                ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span> it the most
-                and is the framework I feel most <span>confident</span> developing in.
+                ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>{' '}
+                it the most and is the framework I feel most <span>confident</span> developing in.
               </p>
             </div>
           </li>
