@@ -1,0 +1,67 @@
+.Competence
+    position: relative
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(5, 20vw)
+    grid-template-rows: repeat(5, 20vh)
+    .Competence__title
+        font-size: 60px
+        background: white
+        grid-row: 2/4
+        grid-column: 2/4
+        width: 460px       
+        .title__text
+            font-size: 96px
+            color: #041552
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            padding: 0px 10px 0px 10px
+        .title__text--sub
+            font-family: Libre Baskerville
+            font-style: italic
+            font-weight: normal
+            font-size: 36px
+            color: #000000
+            padding: 0px 10px 10px 10px
+        .title__text--regular
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 16px
+            color: #D1D1D1
+            padding: 0px 10px 10px 10px
+        // span
+        //     &:nth-of-type(1)
+        //         color: #000000
+        //         font-weight: 700
+        //     &:nth-of-type(2)
+        //         font-family: 'Libre Baskerville', sans-serif
+        //         font-style: italic
+        //         font-weight: 400
+    .Competence__list
+        list-style: none
+        width: 100%
+        padding: 20px 0px 0px 0px
+        .list__item
+            display: flex
+            justify-content: flex-start
+            .item__icon
+                font-size: 260px
+            .--react
+                color: #14DBE8
+        .item__box
+            width: 700px
+            .box__title
+                color: #000000
+                font-weight: 700
+                font-size: 55px
+            .box__info
+                font-family: 'Libre Baskerville', sans-serif
+                font-style: italic
+                font-weight: 400
+                color: #848484
+                span
+                    color: #4A4A4A
+                    font-weight: 600
