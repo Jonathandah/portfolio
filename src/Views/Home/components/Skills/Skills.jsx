@@ -14,18 +14,21 @@ function Skills() {
           </span>
         </h1>
         <div className='container__box'>
-          <div className='box__piece'>
-            <section className='piece__name'>
-              <h2 className='name__title'>Jonathan Dahnberg</h2>
+            <section className='box__name'>
+              <h2 className='name__title'>
+              Jonathan
+              <br></br>
+              Dahnberg</h2>
               <p className='name__description'>
-                A young frontend developer trying to achive <span>stuff</span>.
+                A young frontend
+                <br></br>
+                 developer trying to 
+                <br></br>
+                achive <span>stuff</span>.
               </p>
             </section>
-            <img className='piece__picture' src={pic} alt='Me sitting on a cliff'></img>
-          </div>
-          <div className='box__bio'>
-            <section className='bio__about'>
-              <p className='about__text'>
+            <img className='box__picture' src={pic} alt='Me sitting on a cliff'></img>
+              <p className='box__text'>
                 <span>Hi! </span>
                 <br></br>
                 <br></br>
@@ -46,8 +49,6 @@ function Skills() {
                 <br></br>
                 <span> Don't hesitate to contact me if you have any further questions.</span>
               </p>
-            </section>
-          </div>
         </div>
       </div>
       <div className='Skills__container--list'>

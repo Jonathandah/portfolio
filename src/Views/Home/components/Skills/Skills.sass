@@ -26,51 +26,52 @@
                         color: #1DBF73
         .container__box
             position: relative
-            width: 100%
-            height: 100%
-            display: flex
-            flex-direction: row
-            align-items: flex-start
-            justify-content: space-between
-            box-sizing: border-box
-            .box__piece
-                .piece__name
-                    height: 240px
-                    display: flex
-                    align-items: flex-end
-                    justify-content: flex-end
-                    padding-bottom: 40px
-                    flex-direction: column
-                    border-right: 1px solid #E3DEDE
-                    .name__title
-                        padding-bottom: 10px
-                    .name__description
-                        width: 200px
-                        color: #848484
-                        span
-                            &:nth-of-type(1)
-                                color: #000000
-                                font-style: italic
-                                font-weight: 700
-                .pice__picture
-                    position: relative
-                    max-width: 80%
-                    min-width: 360px
-                    height: auto
-                    padding: 20px 20px 20px 0
-            .box__bio
-                position: relative
-                width: 100%
-                height: 100%
+            width: 70%
+            min-width: 1031px
+            max-width: 1212px
+            display: grid
+            grid-template-areas: ". box_name . ." "box_picture box_picture box_text ." "box_picture box_picture . ."
+            .box__name
+                grid-area: box_name
+                height: 240px
                 display: flex
-                flex-direction: column
+                align-items: flex-start
                 justify-content: flex-end
-                .bio__about
-                    width: 830px
-                    .about__text
-                        font-family: 'Libre Baskerville', sans-serif
-                        color: #4A4A4A
-                        font-weight: 700
+                padding: 0px 20px 20px 0px
+                flex-direction: column
+                border-right: 1px solid #E3DEDE
+                .name__title
+                    padding-bottom: 10px
+                    font-size: 50px
+                .name__description
+                    font-family: 'Libre Baskerville', sans-serif
+                    font-style: italic
+                    font-weight: normal
+                    color: #848484
+                    span
+                        &:nth-of-type(1)
+                            color: #000000
+                            font-weight: 600
+                            font-family: 'Roboto', sans-serif
+            .box__picture
+                grid-area: box_picture
+                position: relative
+                // max-width: 80%
+                // min-width: 360px
+                // height: auto
+                // padding: 20px 20px 20px 0
+            .box__text
+                font-style: italic
+                border-top: 1px solid #E3DEDE
+                grid-area: box_text
+                color: #4A4A4A
+                font-size: 20px
+                padding-left: 20px
+                padding-top: 20px
+                span
+                    &:nth-of-type(1)
+                        color: #000000
+                        font-weight: bold
     .Skills__container--list
         position: relative
         width: 100%
