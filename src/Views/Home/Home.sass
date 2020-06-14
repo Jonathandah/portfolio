@@ -4,39 +4,24 @@
     display: flex
     flex-direction: column
     align-items: center
-    justify-content: center
-    .Home__section--welcome
-        position: relative
-        width: 92%
-        height: 88vh
-        display: flex
-        justify-content: center
-        align-items: center
-        overflow: hidden
-        background: #E2E2E2
-        .section__container
-            position: relative
-            display: flex
-            justify-content: flex-end
-            align-items: flex-end
-            overflow: hidden
-            .container__text
-                font-size: 90px
-                color: #000000
-                height: 88px
-                z-index: 200
-            .container__text--dot
-                width: 14px
-                height: 14px
-                background: #1DBF73
-                border-radius: 50%
-                // right: 0
-                // margin: 20px
-      
-            
-               
-  
+    justify-content: flex-start
+    background: #f8f8f8
 
+.Home > section
+    position: relative
+    width: 100%
+    // padding: 0 60px 0 60px
+    box-sizing: border-box
+    // padding-top: 60px
+    // box-sizing: border-box
+    // padding-bottom: 60px
+    // padding-bottom: 30px //use when multiple components are loaded
+.Home >section > *:first-child
+    padding-top: 60px
+    padding-bottom: 60px
+    box-sizing: border-box
+.Home > section > div //add this class to all childrens in the components
+    padding-bottom: 60px
+    box-sizing: border-box
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap')
-  
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Roboto:wght@400;700;900&display=swap')
