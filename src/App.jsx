@@ -6,7 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faAlignRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import Work_in_progress from "./Views/Work_in_progress/Work_in_progress"
 library.add(fab);
 
 function App() {
@@ -14,18 +14,14 @@ function App() {
     <Router>
       <div className='App'>
         <header className='App__header'></header>
-        <aside className='App__sidebar'>
+        {/* <aside className='App__sidebar'>
           <div className='sidebar__box'>
             <FontAwesomeIcon className='box__icon' icon={faAlignRight} />
             <p className='box__text'>Menu</p>
           </div>
-          {/* <span className="material-icons">home</span>
-          <span className="material-icons">face</span>
-          <span className="material-icons">work</span>
-          <span className="material-icons">alternate_email</span> */}
-        </aside>
+        </aside> */}
         <main className='App__main'>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' component={Work_in_progress} />
         </main>
         <footer className='App__footer'></footer>
       </div>
