@@ -1,0 +1,44 @@
+.Contact
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-direction: column
+    .Contact__container
+        position: relative
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(10, 10vw)
+        grid-template-rows: repeat(9, 10vh)
+        .container__media
+            grid-area: 4/4/7/8
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .media__title
+                .title__text
+                    font-size: 40px
+                    font-family: "Roboto", sans-serif
+                    font-weight: 700 //bold
+                    color: #000
+                .title__question
+                    font-family: "Libre Baskerville", sans-serif
+                    font-style: italic
+                    font-weight: 400
+                    color: #000
+            .media__list
+                list-style: none
+                padding: 12px 0 0 0
+                .list__item
+                    display: flex
+                    flex-direction: row
+                    padding-bottom: 40px
+                    justify-content: flex-start
+                    align-items: flex-end
+                    .item__icon
+                        font-size: 40px
+                    .item__text
+                        font-size: 20px
+                        font-family: "Roboto", sans-serif
+                        font-weight: 500
+                        color: #000
+                        padding-left: 2vw
