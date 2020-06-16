@@ -2,6 +2,7 @@ import React from 'react';
 import './Competence.sass';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ThreeJSLogo from './ThreeJS-logo.svg';
+import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 
 function Competence() {
   return (
@@ -24,8 +25,12 @@ function Competence() {
           <div className='item__box'>
             <h1 className='box__title'>ReactJS</h1>
             <p className='box__info'>
-              ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>
-              it the most and is the framework I feel most <span>confident</span> developing in.
+              ReactJS is my biggest strength as a developer. It's my preferred framework to develop
+              in mainly because I think it's a powerfull and versatile framework.
+              <br></br>
+              <br></br>I<span> enjoy</span> to develop in React and it is the framework I feel most
+              <span> confident</span> developing in. Most of the projects I've done is made in
+              React.
             </p>
           </div>
         </li>
@@ -34,8 +39,9 @@ function Competence() {
           <div className='item__box --rightBox'>
             <h1 className='box__title'>VueJS</h1>
             <p className='box__info'>
-              ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>
-              it the most and is the framework I feel most <span>confident</span> developing in.
+              I would say that I've good basic knowledge in Vue. It's not my "go to framework" but
+              I've the knowledge to create basic projects in Vue, hopfully I'll start to do more of
+              my projects in Vue since I enjoy to use it.
             </p>
           </div>
         </li>
@@ -48,8 +54,13 @@ function Competence() {
           <div className='item__box '>
             <h1 className='box__title'>ThreeJS</h1>
             <p className='box__info'>
-              ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>
-              it the most and is the framework I feel most <span>confident</span> developing in.
+              3D rendering has been very close to my heart for a while now. I enjoy to create
+              anyting from a simple 3D models to a more advanced interative 3D enviroment. To
+              acomlplish this I've worked a lot with the library ThreeJS which is based on webgl and
+              makes it possible to render 3D objects on webased-applications.
+              <br></br>
+              <br></br>
+              Striveing to learn even more about 3D models and 3D rendering.
             </p>
           </div>
         </li>
@@ -58,18 +69,20 @@ function Competence() {
           <div className='item__box --rightBox'>
             <h1 className='box__title'>HTML</h1>
             <p className='box__info'>
-              ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>
-              it the most and is the framework I feel most <span>confident</span> developing in.
+              As a frontend developer I have all the knowledge to create a strucured, sensible and
+              highly functional HTML.
             </p>
           </div>
         </li>
         <li className='list__item --left' style={{ gridArea: '9 / 1 / 11 / 5' }}>
-          <FontAwesomeIcon className='item__icon--css' icon={['fab', 'css3']} />
+          <FontAwesomeIcon className='item__icon--css' icon={['fab', 'css3-alt']} />
           <div className='item__box'>
             <h1 className='box__title'>CSS</h1>
             <p className='box__info'>
-              ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>
-              it the most and is the framework I feel most <span>confident</span> developing in.
+              Narutrally as frontend developer CSS has solid spot as one of my skills. Even do I'm a
+              more loigcal thinking person than I'm a creative one I've great knowledge of ho to
+              make responsive designs, smooth transitions, good structured css. Basicly all the css
+              skills a frontend devloper needs.
             </p>
           </div>
         </li>
@@ -78,8 +91,7 @@ function Competence() {
           <div className='item__box --rightBox'>
             <h1 className='box__title'>SASS</h1>
             <p className='box__info'>
-              ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>
-              it the most and is the framework I feel most <span>confident</span> developing in.
+              My personal prefernce to style my HTML is to style it with SASS.
             </p>
           </div>
         </li>
@@ -88,8 +100,10 @@ function Competence() {
           <div className='item__box'>
             <h1 className='box__title'>Javascript</h1>
             <p className='box__info'>
-              ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>
-              it the most and is the framework I feel most <span>confident</span> developing in.
+              I've always been a more logical thinking person than I've been a creative one. Because
+              of that I enjoy to write Javascript, create functionlaity, optimize and create good
+              perfoming applications with solid Javascript. I always strive to better my code and
+              create a long lasting structure that is simple, make sense and is performing.
             </p>
           </div>
         </li>
@@ -98,8 +112,9 @@ function Competence() {
           <div className='item__box  --rightBox'>
             <h1 className='box__title'>Docker</h1>
             <p className='box__info'>
-              ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>
-              it the most and is the framework I feel most <span>confident</span> developing in.
+              Docker is one skill that I have but unfornetunatly not using very often. I've good
+              basic knowledge of using it to create enviroments and host apllciations in it. Would
+              love to work more with docker in the future.
             </p>
           </div>
         </li>
@@ -108,19 +123,20 @@ function Competence() {
           <div className='item__box'>
             <h1 className='box__title'>NodeJS</h1>
             <p className='box__info'>
-              ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>
-              it the most and is the framework I feel most <span>confident</span> developing in.
+              Durring my time as a frontend developer I've used nodeJS quite a lot. If you need
+              something built in nodejs, im the guy, I've good understadning of when to use it and
+              what to use it for.
+              <br></br>
+              <br></br>
+              Hopfully that's enough ;).
             </p>
           </div>
         </li>
         <li className='list__item --right' style={{ gridArea: '19 / 5 / 21 / 9' }}>
-          <FontAwesomeIcon className='item__icon--wordpress' icon={['fab', 'wordpress']} />
+          <FontAwesomeIcon className='box__icon' icon={faDesktop} />
           <div className='item__box --rightBox'>
-            <h1 className='box__title'>Wordpress</h1>
-            <p className='box__info'>
-              ReactJS is my preferred framwork to develop in for two reasons, I <span>enjoy</span>
-              it the most and is the framework I feel most <span>confident</span> developing in.
-            </p>
+            <h1 className='box__title'>CMS</h1>
+            <p className='box__info'>Last but no least, CMS.</p>
           </div>
         </li>
       </ul>

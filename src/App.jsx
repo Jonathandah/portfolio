@@ -4,10 +4,10 @@ import './App.sass';
 import Home from './Views/Home/Home';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faAlignRight } from '@fortawesome/free-solid-svg-icons';
+import { faAlignRight, faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-library.add(fab);
+library.add(fab, faDesktop);
 
 function App() {
   return (
