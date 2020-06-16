@@ -3,13 +3,13 @@
     width: 100%
     display: grid
     grid-template-columns: repeat(5, 20vw)
-    grid-template-rows: repeat(5, 20vh)
+    grid-template-rows: repeat(4, 20vh)
     .Competence__title
         font-size: 60px
         background: white
         grid-row: 2/4
         grid-column: 2/4
-        width: 460px       
+        width: 460px
         .title__text
             font-size: 96px
             color: #041552
@@ -44,15 +44,51 @@
         list-style: none
         width: 100%
         padding: 20px 0px 0px 0px
+        grid-row: -1
+        grid-column: 1/6
+        display: grid
+        grid-template-columns: repeat(8, 12.5vw)
+        grid-template-rows: repeat(20, 12.5vh)
         .list__item
             display: flex
-            justify-content: flex-start
-            .item__icon
-                font-size: 260px
-            .--react
+            .item__icon--react
                 color: #14DBE8
+                font-size: 200px
+            .item__icon--vue
+                color: #000
+                font-size: 200px
+            .item__icon--html
+                color: orange
+                font-size: 200px
+            .item__icon--css
+                color: blue
+                font-size: 200px
+            .item__icon--sass
+                color: pink
+                font-size: 200px
+            .item__icon--js
+                color: yellow
+                font-size: 200px
+            .item__icon--docker
+                color: blue
+                font-size: 200px
+            .item__icon--nodejs
+                color: green
+                font-size: 200px
+            .item__icon--wordpress
+                color: #000
+                font-size: 200px
+
+        .--left
+            justify-content: flex-start
+            padding-left: 40px
+
+        .--right
+            flex-direction: row-reverse
+            justify-content: flex-end
+            padding-right: 40px
         .item__box
-            width: 700px
+            padding: 10px
             .box__title
                 color: #000000
                 font-weight: 700
@@ -65,3 +101,7 @@
                 span
                     color: #4A4A4A
                     font-weight: 600
+        .--rightBox
+            display: flex
+            flex-direction: column
+            align-items: flex-end
