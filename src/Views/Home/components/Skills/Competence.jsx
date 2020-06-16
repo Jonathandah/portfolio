@@ -2,7 +2,6 @@ import React from 'react';
 import './Competence.sass';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ThreeJSLogo from './ThreeJS-logo.svg';
-import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 
 function Competence() {
   return (
@@ -133,10 +132,14 @@ function Competence() {
           </div>
         </li>
         <li className='list__item --right' style={{ gridArea: '19 / 5 / 21 / 9' }}>
-          <FontAwesomeIcon className='box__icon' icon={faDesktop} />
+          <FontAwesomeIcon className='item__icon--wordpress' icon={['fab', 'wordpress']} />
           <div className='item__box --rightBox'>
-            <h1 className='box__title'>CMS</h1>
-            <p className='box__info'>Last but no least, CMS.</p>
+            <h1 className='box__title'>Wordpress</h1>
+            <p className='box__info'>
+              Last but no least, Wordpress. I've got all the necessery skills to create a sustanible
+              wordpress site. I dont relly preffer working with cms tools but i'm able to do it if
+              its nessecery
+            </p>
           </div>
         </li>
       </ul>
