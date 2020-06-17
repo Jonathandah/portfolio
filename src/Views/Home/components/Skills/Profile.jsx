@@ -1,24 +1,41 @@
-import React from "react";
-import "./Profile.sass";
-import pic from "./profile-pic.png";
+import React, { useEffect } from 'react';
+import './Profile.sass';
+import pic from './profile-pic.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
 
 function Profile() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="Profile">
-      <h1 className="Profile__title">
+    <div className='Profile'>
+      <h1
+        className='Profile__title'
+        data-aos='fade-up'
+        data-aos-offset='200'
+        data-aos-delay='50'
+        data-aos-duration='1000'
+        data-aos-easing='ease-in-out'
+        data-aos-mirror='true'
+        data-aos-once='false'
+        data-aos-anchor-placement='top-center'
+      >
         <span>About</span>
         <span>
           me<span>.</span>
         </span>
       </h1>
-      <div className="Profile__box">
-        <section className="box__name">
-          <h2 className="name__title">
+      <div className='Profile__box'>
+        <section className='box__name'>
+          <h2 className='name__title'>
             Jonathan
             <br></br>
             Dahnberg
           </h2>
-          <p className="name__description">
+          <p className='name__description'>
             A young frontend
             <br></br>
             developer trying to
@@ -26,8 +43,8 @@ function Profile() {
             achive <span>stuff</span>.
           </p>
         </section>
-        <img className="box__picture" src={pic} alt="Me sitting on a cliff"></img>
-        <p className="box__text">
+        <img className='box__picture' src={pic} alt='Me sitting on a cliff'></img>
+        <p className='box__text'>
           <span>Hi! </span>
           <br></br>
           <br></br>

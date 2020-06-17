@@ -11,7 +11,7 @@ import Contact from './components/Contact/Contact';
 function Home() {
   return (
     <div className='Home'>
-      {/* <Intro /> */}
+      <Intro />
       <Skills />
       <Work />
       <Contact />
