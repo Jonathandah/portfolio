@@ -4,7 +4,7 @@ import anicurapic from './Anicura3D.png';
 
 function Work(props) {
   return (
-    <section className='Work'>
+    <section className='Work' id="Work">
       <div className='Work__container'>
         <div className='container__title'>
           <h1 className='title__text'>

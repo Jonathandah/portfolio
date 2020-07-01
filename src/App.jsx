@@ -43,16 +43,16 @@ function App() {
             <>
               <ul className="header__menu">
                 <li>
-                  <a>Intro</a>
+                  <a href="#Intro">Intro</a>
                 </li>
                 <li>
-                  <a>My Skillset</a>
+                  <a href="#Skills">My Skillset</a>
                 </li>
                 <li>
-                  <a>Work</a>
+                  <a href="#Work">Work</a>
                 </li>
                 <li>
-                  <a>Contact</a>
+                  <a href="#Contact">Contact</a>
                 </li>
               </ul>
               <section className="header__social">

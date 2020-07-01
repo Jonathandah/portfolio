@@ -5,7 +5,7 @@ import Competence from "./Competence";
 
 function Skills() {
   return (
-    <section className="Skills">
+    <section className="Skills" id="Skills">
       <Profile />
       <Competence />
     </section>

@@ -4,7 +4,7 @@ import { Mail, GitHub, Linkedin } from "react-feather";
 
 function Contact(props) {
   return (
-    <section className="Contact">
+    <section className="Contact" id="Contact">
       <div className="Contact__container">
         <div className="container__media">
           <div className="media__title">
