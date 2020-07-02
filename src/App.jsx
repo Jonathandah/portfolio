@@ -43,16 +43,16 @@ function App() {
             <>
               <ul className="header__menu">
                 <li>
-                  <a href="#Intro">Intro</a>
+                  <a href="#Intro" onClick={() => openMenu()}>Intro</a>
                 </li>
                 <li>
-                  <a href="#Skills">My Skillset</a>
+                  <a href="#Skills " onClick={() => openMenu()}>My Skillset</a>
                 </li>
                 <li>
-                  <a href="#Work">Work</a>
+                  <a href="#Work" onClick={() => openMenu()}>Work</a>
                 </li>
                 <li>
-                  <a href="#Contact">Contact</a>
+                  <a href="#Contact" onClick={() => openMenu()}>Contact</a>
                 </li>
               </ul>
               <section className="header__social">
