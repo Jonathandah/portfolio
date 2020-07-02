@@ -1,3 +1,27 @@
+@function strip-unit($value) 
+  @return $value / ($value * 0 + 1)
+
+  
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) 
+  $u1: unit($min-vw)
+  $u2: unit($max-vw)
+  $u3: unit($min-font-size)
+  $u4: unit($max-font-size)
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 
+    & 
+      font-size: $min-font-size
+      @media screen and (min-width: $min-vw) 
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}))
+      
+      @media screen and (min-width: $max-vw) 
+        font-size: $max-font-size
+      
+    
+    
+    
+    
+    
 .Competence
     position: relative
     width: 100%
@@ -11,7 +35,7 @@
         grid-column: 2/4
         width: 460px
         .title__text
-            font-size: 96px
+            font-size: 6rem
             color: red
             font-family: Roboto
             font-style: normal
@@ -21,7 +45,7 @@
             font-family: Libre Baskerville
             font-style: italic
             font-weight: normal
-            font-size: 36px
+            font-size: 2rem
             color: #000000
             padding: 0px 10px 10px 10px
         .title__text--regular
@@ -81,19 +105,25 @@
 
         .--left
             justify-content: flex-start
-            padding-left: 40px
+            padding-left: 4%
 
         .--right
             flex-direction: row-reverse
             justify-content: flex-start
-            padding-right: 40px
+            padding-right: 4%
         .item__box
             padding: 10px
+            width: 600px
             .box__title
                 color: #000000
                 font-weight: 700
-                font-size: 55px
+                font-size: 3rem
             .box__info
+                $min_width: 320px
+                $max_width: 600px
+                $min_font: 8px
+                $max_font: 20px
+                @include fluid-type($min_width, $max_width, $min_font, $max_font)
                 font-family: 'Libre Baskerville', sans-serif
                 font-style: italic
                 font-weight: 400
