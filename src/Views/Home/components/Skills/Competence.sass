@@ -35,12 +35,17 @@
         grid-column: 2/4
         width: 460px
         .title__text
-            font-size: 6rem
             color: red
             font-family: Roboto
             font-style: normal
             font-weight: bold
             padding: 0px 10px 0px 10px
+            p
+                $min_width: 4rem
+                $max_width: 6rem
+                $min_font: 4rem
+                $max_font: 6rem
+                @include fluid-type($min_width, $max_width, $min_font, $max_font)
         .title__text--sub
             font-family: Libre Baskerville
             font-style: italic
