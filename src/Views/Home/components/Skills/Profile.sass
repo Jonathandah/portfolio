@@ -1,0 +1,129 @@
+@function strip-unit($value) 
+  @return $value / ($value * 0 + 1)
+
+  
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) 
+  $u1: unit($min-vw)
+  $u2: unit($max-vw)
+  $u3: unit($min-font-size)
+  $u4: unit($max-font-size)
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 
+    & 
+      font-size: $min-font-size
+      @media screen and (min-width: $min-vw) 
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}))
+      
+      @media screen and (min-width: $max-vw) 
+        font-size: $max-font-size
+      
+
+    
+      
+    
+    
+    
+    
+.Profile
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-direction: column
+    .Profile__title
+        position: relative
+        margin-left: auto
+        display: flex
+        flex-direction: column
+        font-size: 8rem
+        text-align: end
+        padding-right: 40px
+        box-sizing: border-box
+        color: red
+        span
+            &:nth-of-type(2)
+                span
+                    // color: #1DBF73
+    .Profile__box
+        position: relative
+        display: grid
+        width: 100%
+        grid-template-columns: repeat(10, 10%)
+        grid-template-rows: repeat(10, 10vh)
+        .box__name
+            grid-area: 2/3/4/5
+            display: flex
+            align-items: flex-end
+            justify-content: flex-end
+            padding: 0px 20px 20px 0px
+            flex-direction: column
+            border-right: 1px solid #E3DEDE
+            .name__title
+                padding-bottom: 10px
+                $min_width: 320px
+                $max_width: 1200px
+                $min_font: 20px
+                $max_font: 50px
+                @include fluid-type($min_width, $max_width, $min_font, $max_font)
+            .name__description
+                white-space: nowrap
+                font-family: 'Libre Baskerville', sans-serif
+                font-style: italic
+                font-weight: normal
+                color: #848484                 
+                $min_width: 320px
+                $max_width: 1200px
+                $min_font: 8px
+                $max_font: 16px
+                @include fluid-type($min_width, $max_width, $min_font, $max_font)
+                span
+                    &:nth-of-type(1)
+                        color: #000000
+                        font-weight: 600
+                        font-family: 'Roboto', sans-serif
+        .box__picture
+            object-fit: cover
+            grid-area: 4/1/4/5
+            position: relative
+            width: 100%
+            // min-width: 360px
+            max-height: 100%
+            // padding: 20px 20px 20px 0
+        .box__text
+            justify-self: start
+            // font-style: italic
+            border-top: 1px solid #E3DEDE
+            width: 300px
+            // min-width: 360px
+            max-height: 100%
+            grid-area: 4/5/8/8
+            color: #4A4A4A
+            $min_width: 320px
+            $max_width: 1200px
+            $min_font: 6px
+            $max_font: 16px
+            @include fluid-type($min_width, $max_width, $min_font, $max_font)
+            padding-left: 20px
+            padding-top: 20px
+            object-fit: cover
+            p
+                &:nth-of-type(1)
+                    color: #000000
+                    font-weight: bold
+
+
+
+@media screen and (max-device-width: 892px) and (max-device-height: 414px) //landscape
+
+@media screen and (max-device-width: 414px) and (max-device-height: 892px) //portrait
+.Profile
+    .Profile__title
+        font-size: 4rem
+        text-align: start
+        margin-left: 0
+        margin-right: auto
+        padding-left: 10px
+        padding-right: 0
+
+@import "../../../../App.sass"

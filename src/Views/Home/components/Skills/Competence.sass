@@ -1,0 +1,142 @@
+@function strip-unit($value) 
+  @return $value / ($value * 0 + 1)
+
+  
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) 
+  $u1: unit($min-vw)
+  $u2: unit($max-vw)
+  $u3: unit($min-font-size)
+  $u4: unit($max-font-size)
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 
+    & 
+      font-size: $min-font-size
+      @media screen and (min-width: $min-vw) 
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}))
+      
+      @media screen and (min-width: $max-vw) 
+        font-size: $max-font-size
+      
+    
+    
+    
+    
+    
+.Competence
+    position: relative
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(5, 20%)
+    grid-template-rows: repeat(4, 20vh)
+    .Competence__title
+        font-size: 60px
+        // background: white
+        grid-row: 2/4
+        grid-column: 2/4
+        width: 460px
+        .title__text
+            color: red
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            padding: 0px 10px 0px 10px
+            p
+                $min_width: 4rem
+                $max_width: 6rem
+                $min_font: 4rem
+                $max_font: 6rem
+                @include fluid-type($min_width, $max_width, $min_font, $max_font)
+        .title__text--sub
+            font-family: Libre Baskerville
+            font-style: italic
+            font-weight: normal
+            font-size: 2rem
+            color: #000000
+            padding: 0px 10px 10px 10px
+        .title__text--regular
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 16px
+            color: #D1D1D1
+            padding: 0px 10px 10px 10px
+        // span
+        //     &:nth-of-type(1)
+        //         color: #000000
+        //         font-weight: 700
+        //     &:nth-of-type(2)
+        //         font-family: 'Libre Baskerville', sans-serif
+        //         font-style: italic
+        //         font-weight: 400
+    .Competence__list
+        list-style: none
+        width: 100%
+        padding: 20px 0px 0px 0px
+        grid-row: -1
+        grid-column: 1/6
+        display: grid
+        grid-template-columns: repeat(8, 12.5%)
+        grid-template-rows: repeat(20, 12.5vh)
+        .list__item
+            display: flex
+            .item__icon--react
+                color: #01d8fe
+                font-size: 200px
+            .item__icon--vue
+                color: #000
+                font-size: 200px
+            .item__icon--html
+                color: #eb6328
+                font-size: 200px
+            .item__icon--css
+                color: #31a1da
+                font-size: 200px
+            .item__icon--sass
+                color: #cd6698
+                font-size: 200px
+            .item__icon--js
+                color: #f0da1c
+                font-size: 200px
+            .item__icon--docker
+                color: #2592e6
+                font-size: 200px
+            .item__icon--nodejs
+                color: #80c728
+                font-size: 200px
+            .item__icon--wordpress
+                color: #000
+                font-size: 200px
+
+        .--left
+            justify-content: flex-start
+            padding-left: 4%
+
+        .--right
+            flex-direction: row-reverse
+            justify-content: flex-start
+            padding-right: 4%
+        .item__box
+            padding: 10px
+            width: 600px
+            .box__title
+                color: #000000
+                font-weight: 700
+                font-size: 3rem
+            .box__info
+                $min_width: 320px
+                $max_width: 600px
+                $min_font: 8px
+                $max_font: 20px
+                @include fluid-type($min_width, $max_width, $min_font, $max_font)
+                font-family: 'Libre Baskerville', sans-serif
+                font-style: italic
+                font-weight: 400
+                color: #848484
+                span
+                    color: #4A4A4A
+                    font-weight: 600
+        .--rightBox
+            display: flex
+            flex-direction: column
+            align-items: flex-end

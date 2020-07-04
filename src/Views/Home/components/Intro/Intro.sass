@@ -2,12 +2,11 @@
     display: flex
     justify-content: center
     align-items: center
-    background: #E2E2E2
     height: 100vh
     overflow: hidden
     .Intro__background
         position: absolute
-        background: #1DBF73
+        background: #1744c0
         z-index: 1
         height: 100%
         width: 100%
@@ -20,7 +19,6 @@
     .Intro__container
         font-size: 5vmin
         overflow: hidden
-        width: 50vmin
         height: 50vmin
         display: flex
         justify-content: flex-start
@@ -31,7 +29,6 @@
     .Intro__container > div div
     .container__firstSection
         height: 50%
-        width: 100%
         display: flex
         align-items: flex-start
         justify-content: flex-end
@@ -43,6 +40,7 @@
                     font-style: italic
                     font-family: 'Libre Baskerville', serif
                     font-weight: 400
+                    color: white
     .container__firstSection > div
         animation: showTopText 1s
         animation-delay: 0.5s
@@ -51,7 +49,6 @@
         transform: translate(0, 100%)
     .container__secondSection
         height: 50%
-        width: 100%
         display: flex
         align-items: flex-start
         justify-content: flex-start
@@ -63,7 +60,7 @@
                     font-style: italic
                     font-family: 'Libre Baskerville', serif
                     font-weight: 400
-                    color: white
+                    color: red
                 &:nth-of-type(n+2)
                     font-weight: 700
                 &:nth-of-type(3)
@@ -94,7 +91,6 @@
     100%
         transform: translate3d(0, 0%, 0)
 
-
 @keyframes showTopText
     0%
         transform: translate3d(0, 100%, 0)
@@ -120,5 +116,15 @@
 @keyframes showOverflow
     from,to
         overflow: visible
+
+@media screen and (max-device-width: 892px) and (max-device-height: 414px) //landscape
+    .Intro
+        .Intro__container
+            font-size: 9vmin
+
+@media screen and (max-device-width: 414px) and (max-device-height: 892px) //portrait
+    .Intro
+        .Intro__container
+            font-size: 9vmin
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Roboto:wght@400;700;900&display=swap')

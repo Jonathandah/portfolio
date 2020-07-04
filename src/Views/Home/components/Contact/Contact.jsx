@@ -1,0 +1,98 @@
+import React from "react";
+import "./Contact.sass";
+import { Mail, GitHub, Linkedin } from "react-feather";
+
+function Contact(props) {
+  return (
+    <section className="Contact" id="Contact">
+      <div className="Contact__container">
+        <div className="container__media">
+          <div className="media__title">
+            <p
+              className="title__question"
+              data-aos="fade-down"
+              data-aos-anchor-placement="top-center"
+              data-aos-offset="-200"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            >
+              Want to know more?
+            </p>
+            <h1
+              className="title__text"
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-center"
+              data-aos-offset="-200"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            >
+              Get in touch with me on,
+            </h1>
+          </div>
+          <ul className="media__list">
+            <li
+              className="list__item"
+              data-aos="flip-up"
+              data-aos-anchor-placement="top-center"
+              data-aos-offset="-200"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            >
+              <a href="mailto: jonathan.dahnberg1@gmail.com">
+                <Mail className="item__icon" />
+                <p className="item__text">Jonathan.dahnberg1@gmail.com</p>
+              </a>
+            </li>
+            <li
+              className="list__item"
+              data-aos="flip-up"
+              data-aos-anchor-placement="top-center"
+              data-aos-offset="-200"
+              data-aos-delay="1300"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            >
+              <a
+                href="https://www.linkedin.com/in/jonathan-meeprong-dahnberg-5289ba174/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin className="item__icon" />
+                <p className="item__text">Jonathan Dahnberg</p>
+              </a>
+            </li>
+            <li
+              className="list__item"
+              data-aos="flip-up"
+              data-aos-anchor-placement="top-center"
+              data-aos-offset="-200"
+              data-aos-delay="1600"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            >
+              <a href="https://github.com/Jonathandah" target="_blank" rel="noopener noreferrer">
+                <GitHub className="item__icon" />
+                <p className="item__text">Jonathandah</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Contact;

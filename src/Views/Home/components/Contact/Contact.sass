@@ -1,0 +1,99 @@
+@function strip-unit($value) 
+  @return $value / ($value * 0 + 1)
+
+  
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) 
+  $u1: unit($min-vw)
+  $u2: unit($max-vw)
+  $u3: unit($min-font-size)
+  $u4: unit($max-font-size)
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 
+    & 
+      font-size: $min-font-size
+      @media screen and (min-width: $min-vw) 
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}))
+      
+      @media screen and (min-width: $max-vw) 
+        font-size: $max-font-size
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+.Contact
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-direction: column
+    .Contact__container
+        position: relative
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(10, 10%)
+        grid-template-rows: repeat(9, 10vh)
+        .container__media
+            grid-area: 4/5/7/8
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .media__title
+                .title__text
+                    white-space: pre
+                    $min_width: 320px
+                    $max_width: 1200px
+                    $min_font: 10px
+                    $max_font: 40px
+                    @include fluid-type($min_width, $max_width, $min_font, $max_font)
+                    font-size: 40px
+                    font-family: "Roboto", sans-serif
+                    font-weight: 700 //bold
+                    color: red
+                .title__question
+                    white-space: pre
+                    font-family: "Libre Baskerville", sans-serif
+                    font-style: italic
+                    font-weight: 400
+                    color: #000
+                    $min_width: 320px
+                    $max_width: 1200px
+                    $min_font: 6px
+                    $max_font: 16px
+                    @include fluid-type($min_width, $max_width, $min_font, $max_font)
+            .media__list
+                list-style: none
+                padding: 12px 0 0 0
+                .list__item
+                    display: flex
+                    flex-direction: row
+                    padding-bottom: 40px
+                    justify-content: flex-start
+                    align-items: flex-end
+                    a
+                        display: contents
+                        color: inherit
+                        text-decoration: none
+                    .item__icon
+                        min-width: 20px
+                        $min_width: 320px
+                        $max_width: 1200px
+                        $min_font: 10px
+                        $max_font: 20px
+                        @include fluid-type($min_width, $max_width, $min_font, $max_font)
+                    .item__text
+                        white-space: pre
+                        $min_width: 320px
+                        $max_width: 1200px
+                        $min_font: 10px
+                        $max_font: 20px
+                        @include fluid-type($min_width, $max_width, $min_font, $max_font)
+                        font-family: "Roboto", sans-serif
+                        font-weight: 500
+                        color: #000
+                        padding-left: 2vw

@@ -3,7 +3,7 @@ import './Intro.sass';
 
 function Intro() {
   return (
-    <section className='Intro'>
+    <section className='Intro' id="Intro">
       <div className='Intro__background'></div>
       <div className='Intro__container'>
         <div className='container__firstSection'>
