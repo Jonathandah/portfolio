@@ -11,10 +11,10 @@ import Contact from './components/Contact/Contact';
 function Home() {
   return (
     <div className='Home'>
-      <Intro />
-      {/* <Skills />
-      <Work />
-      <Contact /> */}
+      {/* <Intro /> */}
+      <Skills />
+      {/* <Work /> */}
+      {/* <Contact /> */}
     </div>
   );
 }

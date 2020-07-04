@@ -56,11 +56,10 @@ function Profile() {
             data-aos-once="true"
             data-aos-anchor-placement="top-center"
           >
-            A young frontend
-            <br></br>
-            developer trying to
-            <br></br>
-            achive <span>stuff</span>.
+            <span>A young frontend</span>
+            <span> developer trying to</span>
+            <span> achive</span>
+            <span> stuff.</span>
           </p>
         </section>
         <img className="box__picture" src={pic} alt="Me sitting on a cliff"></img>
