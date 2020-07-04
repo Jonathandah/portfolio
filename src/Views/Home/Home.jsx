@@ -12,9 +12,9 @@ function Home() {
   return (
     <div className='Home'>
       <Intro />
-      <Skills />
+      {/* <Skills />
       <Work />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }

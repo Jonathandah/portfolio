@@ -1,5 +1,4 @@
 
-
 *
   margin: 0
   .App
@@ -49,7 +48,7 @@
             -webkit-transition: all 0.3s ease-in-out
             -o-transition: all 0.3s ease-in-out
             transition: all 0.3s ease-in-out
-        .is-active 
+        .is-active
           .line
             &:nth-child(2)
               opacity: 0
@@ -133,8 +132,6 @@
     transform: translateZ(0)
     opacity: 1
 
-
-
 @keyframes showSocials
   0%
     transform: translate3d(0,-40px,0)
@@ -144,8 +141,32 @@
     transform: translateZ(0)
     opacity: 1
 
-
-  
-
+@media screen and (max-device-width: 892px) and (max-device-height: 414px) //landscape
+  *
+  .App
+    .App__header
+      .header__section
+        .hamburger
+          top: 23px
+          right: 23px
+      .header__menu
+        li
+          a
+            font-size: 1.2rem
+            padding-top: 4.475rem
+            margin-bottom: 0px
+            
+@media screen and (max-device-width: 414px) and (max-device-height: 892px) //portrait
+  *
+  .App
+    .App__header
+      .header__section
+        .hamburger
+          top: 23px
+          right: 23px
+      .header__menu
+        li
+          a
+            font-size: 1.2rem
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Roboto:wght@400;700;900&display=swap')
