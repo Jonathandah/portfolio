@@ -140,3 +140,44 @@
             display: flex
             flex-direction: column
             align-items: flex-end
+
+@media screen and (max-device-width: 892px) and (max-device-height: 414px) //landscape
+
+@media screen and (max-device-width: 414px) and (max-device-height: 892px) //portrait
+    .Competence
+        .Competence__title
+            grid-row: 2/4
+            grid-column: 1/6
+            width: auto
+            padding: 40px
+            .title__text
+                padding: 0
+                p
+                    font-size: 3rem
+            .title__text--sub
+                padding: 0
+                padding-bottom: 10px
+                font-size: 1.5rem
+            .title__text--regular
+                padding: 0
+                padding-bottom: 10px
+        .Competence__list
+            display: flex
+            flex-direction: column
+            .list__item
+                padding: 40px
+                svg
+                    display: none
+                img
+                    display: none
+                .item__box
+                    padding: 0
+                    width: auto
+                    .box__title
+                        font-size: 2.5rem
+                        padding-bottom: 20px
+                .--rightBox
+                    align-items: flex-start
+
+
+        
