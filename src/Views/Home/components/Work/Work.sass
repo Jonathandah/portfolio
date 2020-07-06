@@ -36,6 +36,7 @@
     align-items: center
     flex-direction: column
     .Work__container
+        padding: 0% 4% 0% 4%
         position: relative
         width: 100%
         display: grid
@@ -153,7 +154,9 @@
 @media screen and (max-device-width: 414px) and (max-device-height: 892px) //portrait
     .Work
         .Work__container
+            padding: 0
             .container__title
+            
                 padding-left: 40px
                 padding-right: 40px
                 max-width: none
@@ -176,7 +179,7 @@
                     .item__box
                         width: 100%
                         box-sizing: border-box
-                        padding: 40px
+                        padding: 40px !important
                         .box__title
                             font-size: 2rem
                             padding-bottom: 20px
