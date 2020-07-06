@@ -32,15 +32,16 @@
     align-items: flex-start
     flex-direction: column
     .Profile__title
+        line-height: 1
         position: relative
         margin-left: auto
         display: flex
         flex-direction: column
         font-size: 8rem
         text-align: end
-        padding-right: 40px
+        padding-right: 4%
         box-sizing: border-box
-        color: red
+        color: #1DBF73
         span
             &:nth-of-type(2)
                 span
@@ -54,11 +55,14 @@
         .box__name
             grid-area: 2/3/4/5
             display: flex
-            align-items: flex-end
+            align-items: flex-start
             justify-content: flex-end
             padding: 0px 20px 20px 0px
             flex-direction: column
             border-right: 1px solid #E3DEDE
+            max-height: 200px
+            align-self: end
+            justify-self: end
             .name__title
                 padding-bottom: 10px
                 $min_width: 320px
@@ -68,10 +72,9 @@
                 @include fluid-type($min_width, $max_width, $min_font, $max_font)
             .name__description
                 white-space: nowrap
-                font-family: 'Libre Baskerville', sans-serif
-                font-style: italic
-                font-weight: normal
-                color: #848484                 
+                font-family: 'Roboto', sans-serif
+                font-weight: bold   
+                line-height: 1.2            
                 $min_width: 320px
                 $max_width: 1200px
                 $min_font: 8px
@@ -79,9 +82,14 @@
                 @include fluid-type($min_width, $max_width, $min_font, $max_font)
                 span
                     &:nth-of-type(1)
-                        color: #000000
-                        font-weight: 600
-                        font-family: 'Roboto', sans-serif
+                        color: #1DBF73
+                        font-weight: normal
+                        font-family: "Libre Baskerville", sans-serif
+                        font-style: italic
+                    &:nth-of-type(2)
+                        color: #1dbf73
+
+                    
         .box__picture
             object-fit: cover
             grid-area: 4/1/4/5
@@ -92,13 +100,11 @@
             // padding: 20px 20px 20px 0
         .box__text
             justify-self: start
-            // font-style: italic
             border-top: 1px solid #E3DEDE
-            width: 300px
-            // min-width: 360px
+            line-height: 1.6
             max-height: 100%
             grid-area: 4/5/8/8
-            color: #4A4A4A
+            color: #606060
             $min_width: 320px
             $max_width: 1200px
             $min_font: 6px
@@ -114,16 +120,74 @@
 
 
 
-@media screen and (max-device-width: 892px) and (max-device-height: 414px) //landscape
-
+@media screen and (max-device-width: 892px) and (max-device-height: 470px) //landscape
+    .Profile
+        .Profile__title
+            font-size: 4rem
+            padding-bottom: 100px
 @media screen and (max-device-width: 414px) and (max-device-height: 892px) //portrait
-.Profile
-    .Profile__title
-        font-size: 4rem
-        text-align: start
-        margin-left: 0
-        margin-right: auto
-        padding-left: 10px
-        padding-right: 0
+    .Profile
+        .Profile__title
+            font-size: 4rem
+            text-align: start
+            margin-left: 0
+            margin-right: auto
+            padding-left: 40px
+            padding-right: 0
+        .Profile__box
+            display: flex
+            flex-direction: column
+            order: 1
+            .box__name
+                grid-area: none
+                padding: 80px 40px 0px 40px
+                align-items: flex-start
+                border-right: none
+                .name__title
+                    font-size: 1.6rem !important
+                .name__description
+                    font-size: 0.8rem !important
+            .box__picture
+                grid-area: none
+                order: 3
+            .box__text
+                border-top: none
+                line-height: initial
+                order: 2
+                padding: 40px
+                width: initial
+                font-size: 12px !important
+
+@media screen and (max-device-width: 650px)
+    .Profile
+        .Profile__title
+            font-size: 4rem
+            text-align: start
+            margin-left: 0
+            margin-right: auto
+            padding-left: 40px
+            padding-right: 0
+        .Profile__box
+            display: flex
+            flex-direction: column
+            order: 1
+            .box__name
+                grid-area: none
+                padding: 80px 40px 0px 40px
+                align-items: flex-start
+                border-right: none
+                .name__title
+                    font-size: 1.6rem !important
+                .name__description
+                    font-size: 0.8rem !important
+            .box__picture
+                grid-area: none
+                order: 3
+            .box__text
+                border-top: none
+                order: 2
+                padding: 40px
+                width: initial
+                font-size: 12px !important
 
 @import "../../../../App.sass"

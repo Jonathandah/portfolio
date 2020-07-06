@@ -109,7 +109,18 @@ function Competence() {
             </p>
           </div>
         </li>
-        <li className="list__item --left" style={{ gridArea: "5 / 1 / 7 / 9" }}>
+        <li
+          className="list__item --left"
+          style={{ gridArea: "5 / 1 / 7 / 9" }}
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-offset="100"
+          data-aos-delay="0"
+          data-aos-duration="1100"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
           <img
             classname="item__icon--threejs"
             style={{ height: "180px", margin: "16px" }}

@@ -26,41 +26,38 @@
     position: relative
     width: 100%
     display: grid
+    padding: 0% 4% 0% 4%
     grid-template-columns: repeat(5, 20%)
     grid-template-rows: repeat(4, 20vh)
     .Competence__title
         font-size: 60px
         // background: white
         grid-row: 2/4
-        grid-column: 2/4
+        grid-column: 1/4
         width: 460px
         .title__text
-            color: red
-            font-family: Roboto
+            font-family: Roboto, sans-serif
             font-style: normal
             font-weight: bold
-            padding: 0px 10px 0px 10px
+            margin-bottom: 40px
+            line-height: 1
             p
-                $min_width: 4rem
-                $max_width: 6rem
-                $min_font: 4rem
-                $max_font: 6rem
-                @include fluid-type($min_width, $max_width, $min_font, $max_font)
+                font-size: 6rem
         .title__text--sub
-            font-family: Libre Baskerville
+            font-family: Libre Baskerville, sans-serif
             font-style: italic
             font-weight: normal
             font-size: 2rem
             color: #000000
-            padding: 0px 10px 10px 10px
+            padding: 0px 10px 10px 0px
         .title__text--regular
-            font-family: Roboto
+            font-family: Roboto, sans-serif
             font-style: normal
             font-weight: bold
             font-size: 14px
             line-height: 16px
-            color: #D1D1D1
-            padding: 0px 10px 10px 10px
+            color: #000000
+            padding: 0px 10px 10px 0px
         // span
         //     &:nth-of-type(1)
         //         color: #000000
@@ -75,47 +72,50 @@
         padding: 20px 0px 0px 0px
         grid-row: -1
         grid-column: 1/6
-        display: grid
-        grid-template-columns: repeat(8, 12.5%)
-        grid-template-rows: repeat(20, 12.5vh)
+        display: flex
+        flex-direction: column
         .list__item
             display: flex
+            padding: 2% 0% 2% 0%
+            svg
+                padding: 10px 0px 10px 0px
+                font-size: 200px
             .item__icon--react
                 color: #01d8fe
-                font-size: 200px
+   
             .item__icon--vue
                 color: #000
-                font-size: 200px
+    
             .item__icon--html
                 color: #eb6328
-                font-size: 200px
+              
             .item__icon--css
                 color: #31a1da
-                font-size: 200px
+      
             .item__icon--sass
                 color: #cd6698
-                font-size: 200px
+          
             .item__icon--js
                 color: #f0da1c
-                font-size: 200px
+         
             .item__icon--docker
                 color: #2592e6
-                font-size: 200px
+        
             .item__icon--nodejs
                 color: #80c728
-                font-size: 200px
+
             .item__icon--wordpress
                 color: #000
-                font-size: 200px
+
 
         .--left
             justify-content: flex-start
-            padding-left: 4%
+ 
 
         .--right
             flex-direction: row-reverse
             justify-content: flex-start
-            padding-right: 4%
+
         .item__box
             padding: 10px
             width: 600px
@@ -126,13 +126,12 @@
             .box__info
                 $min_width: 320px
                 $max_width: 600px
-                $min_font: 8px
-                $max_font: 20px
+                $min_font: 12px
+                $max_font: 16px
                 @include fluid-type($min_width, $max_width, $min_font, $max_font)
-                font-family: 'Libre Baskerville', sans-serif
-                font-style: italic
-                font-weight: 400
-                color: #848484
+                font-family: 'Roboto', sans-serif
+                font-weight: normal
+                color: #606060
                 span
                     color: #4A4A4A
                     font-weight: 600
@@ -140,3 +139,93 @@
             display: flex
             flex-direction: column
             align-items: flex-end
+
+@media screen and (max-device-width: 892px) and (max-device-height: 470px) //landscape
+    .Competence
+        .Competence__title
+            grid-column: 2/5
+            width: initial
+            .title__text
+                p
+                    font-size: 3rem
+            .title__text--sub
+                font-size: 1.5rem
+            .title__text--regular
+                font-size: 12px
+                width: 320px
+        .Competence__list
+            padding: 100px 0px 0px 0px
+            display: flex
+            flex-direction: column
+            .list__item
+                position: relative
+                padding: 0
+                margin: 6%
+                img
+                    margin: 0
+                .item__box
+                    width: initial
+                    padding: 0
+                    .box__title
+                        padding-bottom: 20px
+                .--rightBox           
+            .--left
+                    svg,img
+                        font-size: 160px !important
+                        opacity: 0.2
+                        left: 50%
+                        top: 30%
+                        position: absolute
+            .--right
+                     svg,img
+                        font-size: 160px !important
+                        opacity: 0.2
+                        left: 10%
+                        top: 30%
+                        position: absolute
+
+@media screen and (max-device-width: 414px) and (max-device-height: 892px) //portrait
+    .Competence
+        padding: 0
+        .Competence__title
+            grid-row: 2/4
+            grid-column: 1/6
+            width: auto !important
+            padding: 40px
+            .title__text
+                padding: 0
+                p
+                    font-size: 3rem !important
+            .title__text--sub
+                padding: 0
+                padding-bottom: 10px
+                font-size: 1.5rem 
+            .title__text--regular
+                padding: 0
+                padding-bottom: 10px
+        .Competence__list
+            display: flex
+            flex-direction: column
+            .list__item
+                padding: 40px
+                svg
+                    display: none
+                img
+                    display: none
+                .item__box
+                    padding: 0
+                    width: auto
+                    .box__title
+                        font-size: 2.5rem
+                        padding-bottom: 20px
+                .--rightBox
+                    align-items: flex-start
+
+
+@media screen and (max-device-width: 650px)
+    .Competence
+        .Competence__title
+            width: 302px
+            .title__text
+                p
+                    font-size: 4rem
