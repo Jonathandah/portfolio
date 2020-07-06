@@ -60,7 +60,7 @@ function Profile() {
             <br></br>
             developer trying to
             <br></br>
-             achive<span>stuff.</span>
+             achive<span> stuff.</span>
           </p>
         </section>
         <img className="box__picture" src={pic} alt="Me sitting on a cliff"></img>

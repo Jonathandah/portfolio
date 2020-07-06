@@ -34,12 +34,13 @@
     flex-direction: column
     .Contact__container
         position: relative
+        box-sizing: content-box !important
         width: 100%
-        display: grid
-        grid-template-columns: repeat(10, 10%)
-        grid-template-rows: repeat(9, 10vh)
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100vh
         .container__media
-            grid-area: 4/5/7/8
             flex-direction: column
             justify-content: center
             align-items: center
@@ -97,3 +98,30 @@
                         font-weight: 500
                         color: #000
                         padding-left: 2vw
+
+@media screen and (max-device-width: 892px) and (max-device-height: 414px) //landscape
+  .Contact
+    .Contact__container
+        .container__media
+            .media__title
+                .title__text
+                .title__question
+            .media__list
+                .list__item
+                  align-items: center
+                  padding-bottom: 20px
+
+
+@media screen and (max-device-width: 414px) and (max-device-height: 892px) //portrait
+  .Contact
+    .Contact__container
+        .container__media
+            .media__title
+                .title__text
+                    font-size: 1.4rem
+                .title__question
+                    font-size: 0.8rem
+            .media__list
+                .list__item
+                  align-items: center
+                  padding-bottom: 20px

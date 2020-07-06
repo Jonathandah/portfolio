@@ -32,6 +32,7 @@ function Work(props) {
             >
               y
             </span>
+            <br></br>
             <span
               data-aos="slide-up"
               data-aos-anchor-placement="top-bottom"
@@ -80,7 +81,7 @@ function Work(props) {
               src={anicurapic}
               data-aos="fade-up"
               data-aos-anchor-placement="top-center"
-              data-aos-offset="-200"
+              data-aos-offset="-100"
               data-aos-delay="0"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
@@ -89,7 +90,6 @@ function Work(props) {
             ></img>
             <div className="item__box">
               <h2 className="box__title">
-                <br></br>
                 <span
                   data-aos="fade-left"
                   data-aos-anchor-placement="top-center"
