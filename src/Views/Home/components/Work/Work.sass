@@ -52,8 +52,6 @@
                 font-style: normal
                 font-weight: bold
                 padding: 0px 10px 0px 10px
-                span
-                    display: inline-block
             .title__text--regular
                 max-width: 400px
                 min-width: 300px                
@@ -187,4 +185,24 @@
                             padding-top: 20px
 
        
+@media screen and (max-device-width: 650px)
+    .Work
+        .Work__container
+            .container__list
+                .list__item
+                    display: flex
+                    flex-direction: column-reverse
+                    .item__pic
+                        object-fit: initial
 
+                    .item__box
+                        padding: 6%
+                        .box__title
+                            font-size: 2rem
+                            padding-bottom: 20px
+                        .box__description
+                            padding: 0
+                            max-width: none
+                        .box__link
+                            padding: 0
+                            padding-top: 20px

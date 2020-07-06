@@ -10,6 +10,7 @@
     justify-content: center
     align-items: center
     scroll-behavior: smooth
+
     .App__header
       position: fixed
       width: 100%
@@ -171,5 +172,19 @@
         li
           a
             font-size: 1.2rem
+
+@media screen and (max-device-width: 650px)
+  *
+  .App
+    .App__header
+      .header__section
+        .hamburger
+          top: 23px
+          right: 23px
+      .header__menu
+        li
+          a
+            font-size: 2rem
+            
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Roboto:wght@400;700;900&display=swap')

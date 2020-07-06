@@ -41,11 +41,7 @@
             font-weight: bold
             padding: 0px 10px 0px 10px
             p
-                $min_width: 4rem
-                $max_width: 6rem
-                $min_font: 4rem
-                $max_font: 6rem
-                @include fluid-type($min_width, $max_width, $min_font, $max_font)
+                font-size: 6rem
         .title__text--sub
             font-family: Libre Baskerville
             font-style: italic
@@ -75,47 +71,50 @@
         padding: 20px 0px 0px 0px
         grid-row: -1
         grid-column: 1/6
-        display: grid
-        grid-template-columns: repeat(8, 12.5%)
-        grid-template-rows: repeat(20, 12.5vh)
+        display: flex
+        flex-direction: column
         .list__item
             display: flex
+            padding: 2% 4% 2% 4%
+            svg
+                padding: 10px
+                font-size: 200px
             .item__icon--react
                 color: #01d8fe
-                font-size: 200px
+   
             .item__icon--vue
                 color: #000
-                font-size: 200px
+    
             .item__icon--html
                 color: #eb6328
-                font-size: 200px
+              
             .item__icon--css
                 color: #31a1da
-                font-size: 200px
+      
             .item__icon--sass
                 color: #cd6698
-                font-size: 200px
+          
             .item__icon--js
                 color: #f0da1c
-                font-size: 200px
+         
             .item__icon--docker
                 color: #2592e6
-                font-size: 200px
+        
             .item__icon--nodejs
                 color: #80c728
-                font-size: 200px
+
             .item__icon--wordpress
                 color: #000
-                font-size: 200px
+
 
         .--left
             justify-content: flex-start
-            padding-left: 4%
+ 
 
         .--right
             flex-direction: row-reverse
             justify-content: flex-start
-            padding-right: 4%
+
         .item__box
             padding: 10px
             width: 600px
@@ -126,7 +125,7 @@
             .box__info
                 $min_width: 320px
                 $max_width: 600px
-                $min_font: 8px
+                $min_font: 12px
                 $max_font: 20px
                 @include fluid-type($min_width, $max_width, $min_font, $max_font)
                 font-family: 'Libre Baskerville', sans-serif
@@ -222,4 +221,10 @@
                     align-items: flex-start
 
 
-        
+@media screen and (max-device-width: 650px)
+    .Competence
+        .Competence__title
+            width: 302px
+            .title__text
+                p
+                    font-size: 4rem
