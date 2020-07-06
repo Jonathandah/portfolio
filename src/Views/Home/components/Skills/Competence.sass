@@ -32,31 +32,32 @@
         font-size: 60px
         // background: white
         grid-row: 2/4
-        grid-column: 2/4
+        grid-column: 1/4
         width: 460px
+        padding-left: 4%
         .title__text
-            color: red
-            font-family: Roboto
+            font-family: Roboto, sans-serif
             font-style: normal
             font-weight: bold
-            padding: 0px 10px 0px 10px
+            margin-bottom: 40px
+            line-height: 1
             p
                 font-size: 6rem
         .title__text--sub
-            font-family: Libre Baskerville
+            font-family: Libre Baskerville, sans-serif
             font-style: italic
             font-weight: normal
             font-size: 2rem
             color: #000000
-            padding: 0px 10px 10px 10px
+            padding: 0px 10px 10px 0px
         .title__text--regular
-            font-family: Roboto
+            font-family: Roboto, sans-serif
             font-style: normal
             font-weight: bold
             font-size: 14px
             line-height: 16px
-            color: #D1D1D1
-            padding: 0px 10px 10px 10px
+            color: #000000
+            padding: 0px 10px 10px 0px
         // span
         //     &:nth-of-type(1)
         //         color: #000000
@@ -126,12 +127,11 @@
                 $min_width: 320px
                 $max_width: 600px
                 $min_font: 12px
-                $max_font: 20px
+                $max_font: 16px
                 @include fluid-type($min_width, $max_width, $min_font, $max_font)
                 font-family: 'Libre Baskerville', sans-serif
-                font-style: italic
-                font-weight: 400
-                color: #848484
+                font-weight: normal
+                color: #606060
                 span
                     color: #4A4A4A
                     font-weight: 600
@@ -140,7 +140,7 @@
             flex-direction: column
             align-items: flex-end
 
-@media screen and (max-device-width: 892px) and (max-device-height: 414px) //landscape
+@media screen and (max-device-width: 892px) and (max-device-height: 470px) //landscape
     .Competence
         .Competence__title
             grid-column: 2/5
