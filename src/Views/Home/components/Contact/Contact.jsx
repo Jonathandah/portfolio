@@ -12,8 +12,7 @@ function Contact(props) {
               className="title__question"
               data-aos="fade-down"
               
-              data-aos-offset="-100"
-              data-aos-delay="0"
+              data-aos-offset="100"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
@@ -25,7 +24,7 @@ function Contact(props) {
               className="title__text"
               data-aos="fade-right"
      
-        
+              data-aos-anchor-placement="top-bottom"
               data-aos-offset="-200"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
@@ -39,7 +38,7 @@ function Contact(props) {
             <li
               className="list__item"
               data-aos="flip-up"
-              data-aos-offset="-200"
+              data-aos-offset="0"
               data-aos-delay="1000"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
@@ -54,12 +53,13 @@ function Contact(props) {
             <li
               className="list__item"
               data-aos="flip-up"
-              data-aos-offset="-200"
+              data-aos-offset="0"
               data-aos-delay="1300"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="true"
+        
             >
               <a
                 href="https://www.linkedin.com/in/jonathan-meeprong-dahnberg-5289ba174/"
@@ -73,12 +73,13 @@ function Contact(props) {
             <li
               className="list__item"
               data-aos="flip-up"
-              data-aos-offset="-200"
+              data-aos-offset="0"
               data-aos-delay="1600"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="true"
+       
             >
               <a href="https://github.com/Jonathandah" target="_blank" rel="noopener noreferrer">
                 <GitHub className="item__icon" />
