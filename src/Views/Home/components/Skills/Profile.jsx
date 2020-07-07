@@ -1,21 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import "./Profile.sass";
 import pic from "./profile-pic.png";
 import AOS from "aos";
+
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 
 function Profile() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <div className="Profile">
-      <h1
+      <h1 id="About"
+      data-aos-id="About"
         className="Profile__title"
         data-aos="slide-up"
-        data-aos-offset="-600"
+        data-aos-offset="0"
         data-aos-delay="0"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"

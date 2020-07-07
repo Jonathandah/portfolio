@@ -4,16 +4,16 @@ import anicurapic from "./Anicura3D.png";
 
 function Work(props) {
   return (
-    <section className="Work" id="Work">
+    <section className="Work">
       <div className="Work__container">
-        <div className="container__title">
+        <div className="container__title" id="Work">
           <h1 className="title__text">
             <span
               data-aos="slide-up"
               data-aos-anchor-placement="top-bottom"
-              data-aos-offset="100"
+              data-aos-offset="0"
               data-aos-delay="0"
-              data-aos-duration="600"
+              data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="true"
@@ -23,8 +23,8 @@ function Work(props) {
             <span
               data-aos="slide-up"
               data-aos-anchor-placement="top-bottom"
-              data-aos-offset="100"
-              data-aos-delay="0"
+              data-aos-offset="0"
+              data-aos-delay="100"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
@@ -36,21 +36,57 @@ function Work(props) {
             <span
               data-aos="slide-up"
               data-aos-anchor-placement="top-bottom"
-              data-aos-offset="100"
+              data-aos-offset="200"
               data-aos-delay="0"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="true"
             >
-              work
+              w
             </span>
             <span
               data-aos="slide-up"
               data-aos-anchor-placement="top-bottom"
-              data-aos-offset="100"
-              data-aos-delay="0"
-              data-aos-duration="1500"
+              data-aos-offset="200"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            >
+              o
+            </span>
+            <span
+              data-aos="slide-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-offset="200"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            >
+              r
+            </span>
+            <span
+              data-aos="slide-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-offset="200"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            >
+              k
+            </span>
+            <span
+              data-aos="slide-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-offset="200"
+              data-aos-delay="400"
+              data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="true"
@@ -63,8 +99,8 @@ function Work(props) {
             className="title__text--regular"
             data-aos="fade-up"
             data-aos-anchor-placement="center-center"
-            data-aos-offset="-300"
-            data-aos-delay="300"
+            data-aos-offset="-400"
+            data-aos-delay="450"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"

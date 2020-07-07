@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.sass";
 import Home from "./Views/Home/Home";
@@ -7,27 +7,42 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faAlignRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Mail, GitHub, Linkedin } from "react-feather";
+import AOS from "aos";
 
 library.add(fab);
 
 function App() {
   const [sidebar, updateSidebar] = useState(false);
+  useEffect(() => {
+    AOS.init({
+      startEvent: "load"
+    });
+    window.addEventListener('aos:in', ({ detail }) => {
+      console.log('animated in', detail);
+    });
+    
+    window.addEventListener('aos:out', ({ detail }) => {
+      console.log('animated out', detail);
+    });
+  }, []);
 
   function openMenu(e) {
     if (!sidebar) {
       console.log("open");
-      document.querySelector(".App").style.overflow = "hidden"
+      document.querySelector(".App").style.overflow = "hidden";
       document.querySelector(".hamburger").classList.add("is-active");
       document.querySelector(".App__header").classList.add("is-open");
       updateSidebar(true);
     } else {
       console.log("close");
-      document.querySelector(".App").style.overflow = "auto"
+      document.querySelector(".App").style.overflow = "auto";
       document.querySelector(".hamburger").classList.remove("is-active");
       document.querySelector(".App__header").classList.remove("is-open");
       updateSidebar(false);
     }
   }
+
+
   return (
     <Router>
       <div className="App">
@@ -43,16 +58,35 @@ function App() {
             <>
               <ul className="header__menu">
                 <li>
-                  <a href="#Intro" onClick={() => openMenu()}>Intro</a>
+                  <a href="#Intro" onClick={() => openMenu()}>
+                    Intro
+                  </a>
                 </li>
                 <li>
-                  <a href="#Skills " onClick={() => openMenu()}>My Skillset</a>
+                  <a id="test"
+                    href="#About"
+                    onClick={(e) => {
+                      openMenu();
+                      
+                    }}
+                  >
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a href="#Work" onClick={() => openMenu()}>Work</a>
+                  <a href="#Skills " onClick={() => openMenu()}>
+                    My Skillset
+                  </a>
                 </li>
                 <li>
-                  <a href="#Contact" onClick={() => openMenu()}>Contact</a>
+                  <a href="#Work" onClick={() => openMenu()}>
+                    Work
+                  </a>
+                </li>
+                <li>
+                  <a href="#Contact" onClick={() => openMenu()}>
+                    Contact
+                  </a>
                 </li>
               </ul>
               <section className="header__social">

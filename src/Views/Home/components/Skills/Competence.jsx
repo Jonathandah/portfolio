@@ -6,11 +6,11 @@ import ThreeJSLogo from "./ThreeJS-logo.svg";
 function Competence() {
   return (
     <div className="Competence">
-      <div className="Competence__title">
+      <div className="Competence__title" id="Skills">
         <div className="title__text">
           <p
-            data-aos="slide-right"
-            data-aos-offset="-600"
+            data-aos="fade-left"
+            data-aos-offset="-500"
             data-aos-delay="0"
             data-aos-duration="1700"
             data-aos-easing="ease-in-out"
@@ -21,8 +21,8 @@ function Competence() {
             MY
           </p>
           <p
-            data-aos="slide-right"
-            data-aos-offset="-600"
+            data-aos="fade-left"
+            data-aos-offset="-500"
             data-aos-delay="0"
             data-aos-duration="1500"
             data-aos-easing="ease-in-out"
@@ -35,8 +35,8 @@ function Competence() {
         </div>
         <h2
           className="title__text--sub"
-          data-aos="slide-right"
-          data-aos-offset="-600"
+          data-aos="fade-left"
+          data-aos-offset="-500"
           data-aos-delay="0"
           data-aos-duration="1300"
           data-aos-easing="ease-in-out"
@@ -48,8 +48,8 @@ function Competence() {
         </h2>
         <p
           className="title__text--regular"
-          data-aos="slide-right"
-          data-aos-offset="-600"
+          data-aos="fade-up"
+          data-aos-offset="-500"
           data-aos-delay="0"
           data-aos-duration="1100"
           data-aos-easing="ease-in-out"
@@ -123,7 +123,6 @@ function Competence() {
         >
           <img
             classname="item__icon--threejs"
-            style={{ height: "180px", margin: "16px" }}
             src={ThreeJSLogo}
           />
           <div className="item__box ">
