@@ -16,7 +16,6 @@ function Competence() {
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center"
           >
             MY
           </p>
@@ -66,7 +65,7 @@ function Competence() {
           className="list__item --left"
           style={{ gridArea: "1 / 1 / 3 / 9" }}
           data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
+      
           data-aos-offset="100"
           data-aos-delay="0"
           data-aos-duration="1100"
@@ -122,7 +121,7 @@ function Competence() {
           data-aos-once="true"
         >
           <img
-            classname="item__icon--threejs"
+            className="item__icon--threejs"
             src={ThreeJSLogo}
           />
           <div className="item__box ">

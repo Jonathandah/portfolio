@@ -3,6 +3,7 @@ import "./Profile.sass";
 import pic from "./profile-pic.png";
 import AOS from "aos";
 
+
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 
@@ -20,7 +21,7 @@ function Profile() {
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center"
+       
       >
         <span>About</span>
         <span>
@@ -38,7 +39,7 @@ function Profile() {
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center"
+        
           >
             Jonathan
             <br></br>
@@ -53,7 +54,7 @@ function Profile() {
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center"
+    
           >
             A young frontend
             <br></br>
@@ -75,7 +76,7 @@ function Profile() {
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center"
+   
           >
             I'm Jonathan, 22 years old, and am a graduated Front-End developer from EC Utbildning.
           </p>
@@ -89,7 +90,7 @@ function Profile() {
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center"
+       
           >
             I prefer to develop web-applications in ReactJS, but I'm okay with VueJS as well. I have
             the last couple of months caught an interest in 3D-graphics which has led to a couple of

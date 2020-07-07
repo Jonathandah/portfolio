@@ -10,7 +10,6 @@ function Work(props) {
           <h1 className="title__text">
             <span
               data-aos="slide-up"
-              data-aos-anchor-placement="top-bottom"
               data-aos-offset="0"
               data-aos-delay="0"
               data-aos-duration="1000"
@@ -116,8 +115,7 @@ function Work(props) {
               className="item__pic"
               src={anicurapic}
               data-aos="fade-up"
-              data-aos-anchor-placement="top-center"
-              data-aos-offset="-100"
+              data-aos-offset="0"
               data-aos-delay="0"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
@@ -128,8 +126,7 @@ function Work(props) {
               <h2 className="box__title">
                 <span
                   data-aos="fade-left"
-                  data-aos-anchor-placement="top-center"
-                  data-aos-offset="-200"
+       
                   data-aos-delay="0"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
@@ -141,8 +138,7 @@ function Work(props) {
                 <br></br>
                 <span
                   data-aos="fade-left"
-                  data-aos-anchor-placement="top-center"
-                  data-aos-offset="-200"
+     
                   data-aos-delay="0"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
@@ -153,8 +149,7 @@ function Work(props) {
                 </span>{" "}
                 <span
                   data-aos="fade-left"
-                  data-aos-anchor-placement="top-center"
-                  data-aos-offset="-200"
+
                   data-aos-delay="0"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
@@ -167,8 +162,7 @@ function Work(props) {
               <p
                 className="box__description"
                 data-aos="fade-up"
-                data-aos-anchor-placement="top-center"
-                data-aos-offset="-200"
+     
                 data-aos-delay="0"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
@@ -192,8 +186,7 @@ function Work(props) {
                 rel="noopener noreferrer"
                 href="https://anicura-3dmodels.azurewebsites.net/"
                 data-aos="fade-up"
-                data-aos-anchor-placement="top-center"
-                data-aos-offset="-400"
+                data-aos-offset="-200"
                 data-aos-delay="500"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"

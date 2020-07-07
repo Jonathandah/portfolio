@@ -11,9 +11,9 @@ function Contact(props) {
             <p
               className="title__question"
               data-aos="fade-down"
-              data-aos-anchor-placement="top-center"
-              data-aos-offset="-200"
-              data-aos-delay="200"
+              
+              data-aos-offset="-100"
+              data-aos-delay="0"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
@@ -24,9 +24,9 @@ function Contact(props) {
             <h1
               className="title__text"
               data-aos="fade-right"
-              data-aos-anchor-placement="top-center"
+     
+        
               data-aos-offset="-200"
-              data-aos-delay="0"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
@@ -39,7 +39,6 @@ function Contact(props) {
             <li
               className="list__item"
               data-aos="flip-up"
-              data-aos-anchor-placement="top-center"
               data-aos-offset="-200"
               data-aos-delay="1000"
               data-aos-duration="1000"
@@ -55,7 +54,6 @@ function Contact(props) {
             <li
               className="list__item"
               data-aos="flip-up"
-              data-aos-anchor-placement="top-center"
               data-aos-offset="-200"
               data-aos-delay="1300"
               data-aos-duration="1000"
@@ -75,7 +73,6 @@ function Contact(props) {
             <li
               className="list__item"
               data-aos="flip-up"
-              data-aos-anchor-placement="top-center"
               data-aos-offset="-200"
               data-aos-delay="1600"
               data-aos-duration="1000"
