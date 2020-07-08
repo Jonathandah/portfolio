@@ -114,7 +114,7 @@ function Work(props) {
         </div>
         <ul className='container__list'>
           <li className='list__item'>
-            <img className='item__pic' src={anicurapic}></img>
+            <img className='item__pic' src={anicurapic} alt="Application showing 3D model."></img>
             <div className='item__box'>
               <h2 className='box__title'>
                 <span className='title__section--1'>Anicura</span>
@@ -123,16 +123,19 @@ function Work(props) {
                 <span className='title__section--3'>Models</span>
               </h2>
               <p className='box__description'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit elit, pellentesque
-                tortor molestie sed dui velit quis molestie. Est metus ultrices aliquam nunc. Velit
-                dignissim aliquam, habitasse at. Tellus, pretium sed pulvinar nec in sed lorem
-                pretium. Mattis mauris quam quam fames nulla morbi nulla id. Lacus phasellus arcu in
-                amet.
+                This project will be a project is one made for AniCura which is a company that runs
+                numerous animal clinics in Sweden. Their idea was to build a webb application that
+                can help both veterinarians and customers to understand dog's and cat’s anatomies
+                better. They have the vision to inspect 3D models through an application to educate
+                upcoming veterinarians and help customers to understand possible surgeries,
+                treatments or injuries on their pets. In this case only dogs and cats because that's
+                AniCura’s primary focus. 
                 <br></br>
                 <br></br>
-                Semper cursus fusce mauris arcu leo velit luctus augue. Proin hendrerit morbi
-                aliquam, rhoncus leo pulvinar lorem lorem nibh. Dictum id enim vitae volutpat magna
-                urna. Faucibus nullam id aliquam augue. Nec consequat pulvinar tellus sed urna.
+                This project is based on ThreeJS to render 3D models and I using React as framework.
+                <br></br>
+                <br></br>
+                Note: This a demo and is still missing some functionality.
               </p>
               <a
                 className='box__link'

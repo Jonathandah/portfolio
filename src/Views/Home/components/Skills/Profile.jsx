@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './Profile.sass';
 import pic from './profile-pic.png';
 import ScrollReveal from 'scrollreveal';

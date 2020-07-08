@@ -45,10 +45,10 @@ function Competence() {
           <p className='text__section--1'>MY</p>
           <p className='text__section--2'>SKILLSET.</p>
         </div>
-        <h2 className='title__text--sub'>Lorem ipsum dolor</h2>
+        <h2 className='title__text--sub'>Creating stuff with:</h2>
         <p className='title__text--regular'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit id ut posuere nibh
-          cursus parturient a.
+          A list of my set of skills which I can provide in your projects. They should be seen as a
+          description as what kind of developer I percept to be.
         </p>
       </div>
       <ul className='Competence__list'>
@@ -60,7 +60,7 @@ function Competence() {
               ReactJS is my biggest strength as a developer. It's my preferred framework to develop
               in mainly because I think it's a powerfull and versatile framework.
               <br></br>
-              <br></br>I<span> enjoy</span> to develop in React and it is the framework I feel most
+              <br></br>I<span> enjoy</span> to develop in React and it's the framework I feel most
               <span> confident</span> developing in. Most of the projects I've done is made in
               React.
             </p>
@@ -71,21 +71,22 @@ function Competence() {
           <div className='item__box --rightBox'>
             <h1 className='box__title'>VueJS</h1>
             <p className='box__info'>
-              I would say that I've good basic knowledge in Vue. It's not my "go to framework" but
-              I've the knowledge to create basic projects in Vue, hopfully I'll start to do more of
-              my projects in Vue since I enjoy to use it.
+              I would say that I've good basic knowledge in Vue. It's not my "go to" framework but
+              I've the knowledge to create <span>basic</span> projects in Vue, hopfully I'll start
+              to do more of my projects in Vue since I enjoy to use it.
             </p>
           </div>
         </li>
         <li className='list__item --left' style={{ gridArea: '5 / 1 / 7 / 9' }}>
-          <img className='item__icon--threejs' src={ThreeJSLogo} />
+          <img className='item__icon--threejs' src={ThreeJSLogo} alt="ThreeJS logo"/>
           <div className='item__box '>
             <h1 className='box__title'>ThreeJS</h1>
             <p className='box__info'>
-              3D rendering has been very close to my heart for a while now. I enjoy to create
-              anyting from a simple 3D models to a more advanced interative 3D enviroment. To
-              acomlplish this I've worked a lot with the library ThreeJS which is based on webgl and
-              makes it possible to render 3D objects on webased-applications.
+              3D rendering has been very close to my heart for a while now. I <span>enjoy</span> to
+              create anything from a simple 3D models to a more advanced interactive 3D enviroment.
+              To acomplish this I've worked a lot with the library <span>ThreeJS</span> which is
+              based on <span>WebGl</span> and makes it possible to render 3D objects on web-based
+              applications.
               <br></br>
               <br></br>
               Striveing to learn even more about 3D models and 3D rendering.
@@ -97,8 +98,9 @@ function Competence() {
           <div className='item__box --rightBox'>
             <h1 className='box__title'>HTML</h1>
             <p className='box__info'>
-              As a frontend developer I have all the knowledge to create a strucured, sensible and
-              highly functional HTML.
+              As a frontend developer I have all the knowledge to create a <span>structured</span>,
+              sensible and
+              <span> highly</span> functional HTML.
             </p>
           </div>
         </li>
@@ -107,10 +109,10 @@ function Competence() {
           <div className='item__box'>
             <h1 className='box__title'>CSS</h1>
             <p className='box__info'>
-              Narutrally as frontend developer CSS has solid spot as one of my skills. Even do I'm a
-              more loigcal thinking person than I'm a creative one I've great knowledge of ho to
-              make responsive designs, smooth transitions, good structured css. Basicly all the css
-              skills a frontend devloper needs.
+              Narutrally as a frontend developer CSS has solid spot as one of my skills. Even do I'm
+              a more loigcal thinking individual than I'm a creative one I've <span>great</span>{' '}
+              knowledge of how to make responsive designs, smooth transitions and good structured
+              CSS. Basically all the CSS skills a frontend devloper needs.
             </p>
           </div>
         </li>
@@ -119,7 +121,8 @@ function Competence() {
           <div className='item__box --rightBox'>
             <h1 className='box__title'>SASS</h1>
             <p className='box__info'>
-              My personal prefernce to style my HTML is to style it with SASS.
+              My personal <span>preference</span> to style my HTML is to style it with SASS since I prefer SASS
+              way of structuring it self.
             </p>
           </div>
         </li>
@@ -128,10 +131,10 @@ function Competence() {
           <div className='item__box'>
             <h1 className='box__title'>Javascript</h1>
             <p className='box__info'>
-              I've always been a more logical thinking person than I've been a creative one. Because
-              of that I enjoy to write Javascript, create functionlaity, optimize and create good
+              As I mentioned before I've always been a more logical thinking person than I've been a creative one. Because
+              of that I <span>enjoy</span> to create good performing Javascript, create functionality, optimize and develop good
               perfoming applications with solid Javascript. I always strive to better my code and
-              create a long lasting structure that is simple, make sense and is performing.
+              create a long lasting structure that is simple but <span>effective</span>.
             </p>
           </div>
         </li>
@@ -140,9 +143,9 @@ function Competence() {
           <div className='item__box  --rightBox'>
             <h1 className='box__title'>Docker</h1>
             <p className='box__info'>
-              Docker is one skill that I have but unfornetunatly not using very often. I've good
-              basic knowledge of using it to create enviroments and host apllciations in it. Would
-              love to work more with docker in the future.
+              Docker is one skill that I have but unfortunately not using very often. I've good
+              basic knowledge of using it, to create enviroments and host apllciations in it. Would
+              love to work more with Docker in the future.
             </p>
           </div>
         </li>
@@ -151,9 +154,8 @@ function Competence() {
           <div className='item__box'>
             <h1 className='box__title'>NodeJS</h1>
             <p className='box__info'>
-              Durring my time as a frontend developer I've used nodeJS quite a lot. If you need
-              something built in nodejs, im the guy, I've good understadning of when to use it and
-              what to use it for.
+              Durring my time as a frontend developer I've used NodeJS quite a lot. If you need
+              something built in NodeJS, <span>I'm the guy</span>. I've good understadning of how to use it and when to use it.
               <br></br>
               <br></br>
               Hopfully that's enough ;).
@@ -165,9 +167,7 @@ function Competence() {
           <div className='item__box --rightBox'>
             <h1 className='box__title'>Wordpress</h1>
             <p className='box__info'>
-              Last but no least, Wordpress. I've got all the necessery skills to create a sustanible
-              wordpress site. I dont relly preffer working with cms tools but i'm able to do it if
-              its nessecery
+              Last but no least, Wordpress. I've got all the necessery skills to create a <span>sustainable</span>, <span>sensible</span> and <span>sleek</span> looking Wordpress based site.
             </p>
           </div>
         </li>

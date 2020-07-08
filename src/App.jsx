@@ -1,41 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.sass';
 import Home from './Views/Home/Home';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faAlignRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Mail, GitHub, Linkedin } from 'react-feather';
-import AOS from 'aos';
 import ScrollReveal from 'scrollreveal';
 library.add(fab);
 
 function App() {
-  // const [sidebar, updateSidebar] = useState(false);
-  // useEffect(() => {
-  //   AOS.init({startEvent:"load"});
-  // }, []);
-
   let sidebar = false;
   function openMenu(e) {
     if (!sidebar) {
-      console.log('open');
       document.querySelector('.App').classList.add('freeze');
       document.querySelector('.hamburger').classList.add('is-active');
       document.querySelector('.App__header').classList.add('is-open');
-      document.querySelector('.header__menu').classList.add('test');
-      document.querySelector('.header__social').classList.add('test2');
+      document.querySelector('.header__menu').classList.add('show-menu');
+      document.querySelector('.header__social').classList.add('show-social');
       sidebar = true;
     } else {
-      console.log('close');
-      // document.querySelector('.App').style.overflow = 'auto';
       document.querySelector('.App').classList.remove('freeze');
-
       document.querySelector('.hamburger').classList.remove('is-active');
       document.querySelector('.App__header').classList.remove('is-open');
-      document.querySelector('.header__menu').classList.remove('test');
-      document.querySelector('.header__social').classList.remove('test2');
+      document.querySelector('.header__menu').classList.remove('show-menu');
+      document.querySelector('.header__social').classList.remove('show-social');
       sidebar = false;
     }
   }
@@ -113,12 +101,12 @@ function App() {
           </ul>
           <section className='header__social'>
             <ul className='social__list'>
-              <li className='list__item'>
+              <li className='list__item--social'>
                 <a href='mailto: jonathan.dahnberg1@gmail.com'>
                   <Mail className='item__icon' />
                 </a>
               </li>
-              <li className='list__item'>
+              <li className='list__item--social'>
                 <a
                   href='https://www.linkedin.com/in/jonathan-meeprong-dahnberg-5289ba174/'
                   target='_blank'
@@ -127,7 +115,7 @@ function App() {
                   <Linkedin className='item__icon' />
                 </a>
               </li>
-              <li className='list__item'>
+              <li className='list__item--social'>
                 <a href='https://github.com/Jonathandah' target='_blank' rel='noopener noreferrer'>
                   <GitHub className='item__icon' />
                 </a>
