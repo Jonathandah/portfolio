@@ -124,7 +124,7 @@ function App() {
           </section>
         </header>
         <main className='App__main'>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' component={Work_in_progress} />
         </main>
         <footer className='App__footer'></footer>
       </div>
