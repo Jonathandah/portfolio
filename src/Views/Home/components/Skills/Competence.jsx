@@ -6,13 +6,13 @@ import ScrollReveal from 'scrollreveal';
 
 function Competence() {
   useEffect(() => {
-    ScrollReveal().reveal('.text__section--1', {
+    ScrollReveal().reveal('.text__section--c1', {
       delay: 200,
       distance: '200px',
       origin: 'left',
       duration: 1700,
     });
-    ScrollReveal().reveal('.text__section--2', {
+    ScrollReveal().reveal('.text__section--c2', {
       delay: 200,
       distance: '200px',
       origin: 'left',
@@ -42,8 +42,8 @@ function Competence() {
     <div className='Competence'>
       <div className='Competence__title' id='Skills'>
         <div className='title__text'>
-          <p className='text__section--1'>MY</p>
-          <p className='text__section--2'>SKILLSET.</p>
+          <p className='text__section--c1'>MY</p>
+          <p className='text__section--c2'>SKILLSET.</p>
         </div>
         <h2 className='title__text--sub'>Creating stuff with:</h2>
         <p className='title__text--regular'>

@@ -5,43 +5,43 @@ import ScrollReveal from 'scrollreveal';
 
 function Work(props) {
   useEffect(() => {
-    ScrollReveal().reveal('.text__section--1', {
+    ScrollReveal().reveal('.text__section--w1', {
       delay: 200,
       distance: '200px',
       origin: 'bottom',
       duration: 1000,
     });
-    ScrollReveal().reveal('.text__section--2', {
+    ScrollReveal().reveal('.text__section--w2', {
       delay: 300,
       distance: '200px',
       origin: 'bottom',
       duration: 1000,
     });
-    ScrollReveal().reveal('.text__section--3', {
+    ScrollReveal().reveal('.text__section--w3', {
       delay: 200,
       distance: '200px',
       origin: 'left',
       duration: 1000,
     });
-    ScrollReveal().reveal('.text__section--4', {
+    ScrollReveal().reveal('.text__section--w4', {
       delay: 300,
       distance: '200px',
       origin: 'bottom',
       duration: 1000,
     });
-    ScrollReveal().reveal('.text__section--5', {
+    ScrollReveal().reveal('.text__section--w5', {
       delay: 400,
       distance: '200px',
       origin: 'bottom',
       duration: 1000,
     });
-    ScrollReveal().reveal('.text__section--6', {
+    ScrollReveal().reveal('.text__section--w6', {
       delay: 500,
       distance: '200px',
       origin: 'bottom',
       duration: 1000,
     });
-    ScrollReveal().reveal('.text__section--7', {
+    ScrollReveal().reveal('.text__section--w7', {
       delay: 600,
       distance: '200px',
       origin: 'bottom',
@@ -97,14 +97,14 @@ function Work(props) {
       <div className='Work__container'>
         <div className='container__title' id='Work'>
           <h1 className='title__text'>
-            <span className='text__section--1'>M</span>
-            <span className='text__section--2'>y</span>
+            <span className='text__section--w1'>M</span>
+            <span className='text__section--w2'>y</span>
             <br></br>
-            <span className='text__section--3'>w</span>
-            <span className='text__section--4'>o</span>
-            <span className='text__section--5'>r</span>
-            <span className='text__section--6'>k</span>
-            <span className='text__section--7'>.</span>
+            <span className='text__section--w3'>w</span>
+            <span className='text__section--w4'>o</span>
+            <span className='text__section--w5'>r</span>
+            <span className='text__section--w6'>k</span>
+            <span className='text__section--w7'>.</span>
           </h1>
 
           <p className='title__text--regular'>
