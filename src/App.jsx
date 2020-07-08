@@ -49,7 +49,6 @@ function App() {
             <li>
               <a
                 href='#About'
-                id='About'
                 onClick={(e) => {
                   ScrollReveal().destroy();
 
@@ -62,7 +61,6 @@ function App() {
             <li>
               <a
                 href='#Skills'
-                id='Skills'
                 onClick={(e) => {
                   ScrollReveal().destroy();
 
@@ -75,7 +73,6 @@ function App() {
             <li>
               <a
                 href='#Work'
-                id='Work'
                 onClick={(e) => {
                   ScrollReveal().destroy();
 
@@ -88,7 +85,6 @@ function App() {
             <li>
               <a
                 href='#Contact'
-                id='Contact'
                 onClick={(e) => {
                   ScrollReveal().destroy();
 
