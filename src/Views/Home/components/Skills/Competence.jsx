@@ -1,82 +1,62 @@
-import React from "react";
-import "./Competence.sass";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ThreeJSLogo from "./ThreeJS-logo.svg";
+import React, { useEffect } from 'react';
+import './Competence.sass';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ThreeJSLogo from './ThreeJS-logo.svg';
+import ScrollReveal from 'scrollreveal';
 
 function Competence() {
+  useEffect(() => {
+    ScrollReveal().reveal('.text__section--1', {
+      delay: 200,
+      distance: '200px',
+      origin: 'left',
+      duration: 1700,
+    });
+    ScrollReveal().reveal('.text__section--2', {
+      delay: 200,
+      distance: '200px',
+      origin: 'left',
+      duration: 1500,
+    });
+    ScrollReveal().reveal('.title__text--sub', {
+      delay: 200,
+      distance: '200px',
+      origin: 'left',
+      duration: 1300,
+    });
+    ScrollReveal().reveal('.title__text--regular', {
+      delay: 200,
+      distance: '200px',
+      origin: 'bottom',
+      duration: 1100,
+    });
+    ScrollReveal().reveal('.list__item', {
+      delay: 200,
+      distance: '100px',
+      origin: 'bottom',
+      duration: 1100,
+    });
+  }, []);
+
   return (
-    <div className="Competence">
-      <div className="Competence__title" id="Skills">
-        <div className="title__text">
-          <p
-            data-aos="fade-left"
-            data-aos-offset="-500"
-            data-aos-delay="0"
-            data-aos-duration="1700"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-          >
-            MY
-          </p>
-          <p
-            data-aos="fade-left"
-            data-aos-offset="-500"
-            data-aos-delay="0"
-            data-aos-duration="1500"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="top-center"
-          >
-            SKILLSET.
-          </p>
+    <div className='Competence'>
+      <div className='Competence__title' id='Skills'>
+        <div className='title__text'>
+          <p className='text__section--1'>MY</p>
+          <p className='text__section--2'>SKILLSET.</p>
         </div>
-        <h2
-          className="title__text--sub"
-          data-aos="fade-left"
-          data-aos-offset="-500"
-          data-aos-delay="0"
-          data-aos-duration="1300"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-        >
-          Lorem ipsum dolor
-        </h2>
-        <p
-          className="title__text--regular"
-          data-aos="fade-up"
-          data-aos-offset="-500"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-        >
+        <h2 className='title__text--sub'>Lorem ipsum dolor</h2>
+        <p className='title__text--regular'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit id ut posuere nibh
           cursus parturient a.
         </p>
       </div>
-      <ul className="Competence__list">
-        <li
-          className="list__item --left"
-          style={{ gridArea: "1 / 1 / 3 / 9" }}
-          data-aos="fade-up"
-      
-          data-aos-offset="100"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <FontAwesomeIcon className="item__icon--react" icon={["fab", "react"]} />
-          <div className="item__box">
-            <h1 className="box__title">ReactJS</h1>
-            <p className="box__info">
+      <ul className='Competence__list'>
+        <li className='list__item --left' style={{ gridArea: '1 / 1 / 3 / 9' }}>
+          <FontAwesomeIcon className='item__icon--react' icon={['fab', 'react']} />
+          <div className='item__box'>
+            <h1 className='box__title'>ReactJS</h1>
+            <p className='box__info'>
               ReactJS is my biggest strength as a developer. It's my preferred framework to develop
               in mainly because I think it's a powerfull and versatile framework.
               <br></br>
@@ -86,47 +66,22 @@ function Competence() {
             </p>
           </div>
         </li>
-        <li
-          className="list__item --right"
-          style={{ gridArea: "3 / 1 / 5 / 9" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-offset="100"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <FontAwesomeIcon className="item__icon--vue" icon={["fab", "vuejs"]} />
-          <div className="item__box --rightBox">
-            <h1 className="box__title">VueJS</h1>
-            <p className="box__info">
+        <li className='list__item --right' style={{ gridArea: '3 / 1 / 5 / 9' }}>
+          <FontAwesomeIcon className='item__icon--vue' icon={['fab', 'vuejs']} />
+          <div className='item__box --rightBox'>
+            <h1 className='box__title'>VueJS</h1>
+            <p className='box__info'>
               I would say that I've good basic knowledge in Vue. It's not my "go to framework" but
               I've the knowledge to create basic projects in Vue, hopfully I'll start to do more of
               my projects in Vue since I enjoy to use it.
             </p>
           </div>
         </li>
-        <li
-          className="list__item --left"
-          style={{ gridArea: "5 / 1 / 7 / 9" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-offset="100"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <img
-            className="item__icon--threejs"
-            src={ThreeJSLogo}
-          />
-          <div className="item__box ">
-            <h1 className="box__title">ThreeJS</h1>
-            <p className="box__info">
+        <li className='list__item --left' style={{ gridArea: '5 / 1 / 7 / 9' }}>
+          <img className='item__icon--threejs' src={ThreeJSLogo} />
+          <div className='item__box '>
+            <h1 className='box__title'>ThreeJS</h1>
+            <p className='box__info'>
               3D rendering has been very close to my heart for a while now. I enjoy to create
               anyting from a simple 3D models to a more advanced interative 3D enviroment. To
               acomlplish this I've worked a lot with the library ThreeJS which is based on webgl and
@@ -137,43 +92,21 @@ function Competence() {
             </p>
           </div>
         </li>
-        <li
-          className="list__item --right"
-          style={{ gridArea: "7 / 1 / 9 / 9" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-offset="100"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <FontAwesomeIcon className="item__icon--html" icon={["fab", "html5"]} />
-          <div className="item__box --rightBox">
-            <h1 className="box__title">HTML</h1>
-            <p className="box__info">
+        <li className='list__item --right' style={{ gridArea: '7 / 1 / 9 / 9' }}>
+          <FontAwesomeIcon className='item__icon--html' icon={['fab', 'html5']} />
+          <div className='item__box --rightBox'>
+            <h1 className='box__title'>HTML</h1>
+            <p className='box__info'>
               As a frontend developer I have all the knowledge to create a strucured, sensible and
               highly functional HTML.
             </p>
           </div>
         </li>
-        <li
-          className="list__item --left"
-          style={{ gridArea: "9 / 1 / 11 / 9" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-offset="100"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <FontAwesomeIcon className="item__icon--css" icon={["fab", "css3-alt"]} />
-          <div className="item__box">
-            <h1 className="box__title">CSS</h1>
-            <p className="box__info">
+        <li className='list__item --left' style={{ gridArea: '9 / 1 / 11 / 9' }}>
+          <FontAwesomeIcon className='item__icon--css' icon={['fab', 'css3-alt']} />
+          <div className='item__box'>
+            <h1 className='box__title'>CSS</h1>
+            <p className='box__info'>
               Narutrally as frontend developer CSS has solid spot as one of my skills. Even do I'm a
               more loigcal thinking person than I'm a creative one I've great knowledge of ho to
               make responsive designs, smooth transitions, good structured css. Basicly all the css
@@ -181,42 +114,20 @@ function Competence() {
             </p>
           </div>
         </li>
-        <li
-          className="list__item --right"
-          style={{ gridArea: "11 / 1 / 13 / 9" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-offset="100"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <FontAwesomeIcon className="item__icon--sass" icon={["fab", "sass"]} />
-          <div className="item__box --rightBox">
-            <h1 className="box__title">SASS</h1>
-            <p className="box__info">
+        <li className='list__item --right' style={{ gridArea: '11 / 1 / 13 / 9' }}>
+          <FontAwesomeIcon className='item__icon--sass' icon={['fab', 'sass']} />
+          <div className='item__box --rightBox'>
+            <h1 className='box__title'>SASS</h1>
+            <p className='box__info'>
               My personal prefernce to style my HTML is to style it with SASS.
             </p>
           </div>
         </li>
-        <li
-          className="list__item --left"
-          style={{ gridArea: "13 / 1 / 15 / 9" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-offset="100"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <FontAwesomeIcon className="item__icon--js" icon={["fab", "js"]} />
-          <div className="item__box">
-            <h1 className="box__title">Javascript</h1>
-            <p className="box__info">
+        <li className='list__item --left' style={{ gridArea: '13 / 1 / 15 / 9' }}>
+          <FontAwesomeIcon className='item__icon--js' icon={['fab', 'js']} />
+          <div className='item__box'>
+            <h1 className='box__title'>Javascript</h1>
+            <p className='box__info'>
               I've always been a more logical thinking person than I've been a creative one. Because
               of that I enjoy to write Javascript, create functionlaity, optimize and create good
               perfoming applications with solid Javascript. I always strive to better my code and
@@ -224,44 +135,22 @@ function Competence() {
             </p>
           </div>
         </li>
-        <li
-          className="list__item --right"
-          style={{ gridArea: "15 / 1 / 17 / 9" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-offset="100"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <FontAwesomeIcon className="item__icon--docker" icon={["fab", "docker"]} />
-          <div className="item__box  --rightBox">
-            <h1 className="box__title">Docker</h1>
-            <p className="box__info">
+        <li className='list__item --right' style={{ gridArea: '15 / 1 / 17 / 9' }}>
+          <FontAwesomeIcon className='item__icon--docker' icon={['fab', 'docker']} />
+          <div className='item__box  --rightBox'>
+            <h1 className='box__title'>Docker</h1>
+            <p className='box__info'>
               Docker is one skill that I have but unfornetunatly not using very often. I've good
               basic knowledge of using it to create enviroments and host apllciations in it. Would
               love to work more with docker in the future.
             </p>
           </div>
         </li>
-        <li
-          className="list__item --left"
-          style={{ gridArea: "17 / 1 / 19 / 9" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-offset="100"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <FontAwesomeIcon className="item__icon--nodejs" icon={["fab", "node-js"]} />
-          <div className="item__box">
-            <h1 className="box__title">NodeJS</h1>
-            <p className="box__info">
+        <li className='list__item --left' style={{ gridArea: '17 / 1 / 19 / 9' }}>
+          <FontAwesomeIcon className='item__icon--nodejs' icon={['fab', 'node-js']} />
+          <div className='item__box'>
+            <h1 className='box__title'>NodeJS</h1>
+            <p className='box__info'>
               Durring my time as a frontend developer I've used nodeJS quite a lot. If you need
               something built in nodejs, im the guy, I've good understadning of when to use it and
               what to use it for.
@@ -271,22 +160,11 @@ function Competence() {
             </p>
           </div>
         </li>
-        <li
-          className="list__item --right"
-          style={{ gridArea: "19 / 1 / 21 / 9" }}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-offset="100"
-          data-aos-delay="0"
-          data-aos-duration="1100"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          <FontAwesomeIcon className="item__icon--wordpress" icon={["fab", "wordpress"]} />
-          <div className="item__box --rightBox">
-            <h1 className="box__title">Wordpress</h1>
-            <p className="box__info">
+        <li className='list__item --right' style={{ gridArea: '19 / 1 / 21 / 9' }}>
+          <FontAwesomeIcon className='item__icon--wordpress' icon={['fab', 'wordpress']} />
+          <div className='item__box --rightBox'>
+            <h1 className='box__title'>Wordpress</h1>
+            <p className='box__info'>
               Last but no least, Wordpress. I've got all the necessery skills to create a sustanible
               wordpress site. I dont relly preffer working with cms tools but i'm able to do it if
               its nessecery

@@ -8,34 +8,36 @@ import { faAlignRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Mail, GitHub, Linkedin } from 'react-feather';
 import AOS from 'aos';
-
+import ScrollReveal from 'scrollreveal';
 library.add(fab);
 
 function App() {
-  const [sidebar, updateSidebar] = useState(false);
-  useEffect(() => {
-    AOS.init({startEvent:"scroll"});
-  }, []);
+  // const [sidebar, updateSidebar] = useState(false);
+  // useEffect(() => {
+  //   AOS.init({startEvent:"load"});
+  // }, []);
 
+  let sidebar = false;
   function openMenu(e) {
     if (!sidebar) {
       console.log('open');
-      document.querySelector('.App').style.overflow = 'hidden';
+      document.querySelector('.App').classList.add('freeze');
       document.querySelector('.hamburger').classList.add('is-active');
       document.querySelector('.App__header').classList.add('is-open');
-      updateSidebar(true);
+      document.querySelector('.header__menu').classList.add('test');
+      document.querySelector('.header__social').classList.add('test2');
+      sidebar = true;
     } else {
-      AOS.init({startEvent: "transitionend"});
-      AOS.refreshHard()
-      AOS.init({startEvent:"scroll"});
-      console.log(AOS)
       console.log('close');
-      document.querySelector('.App').style.overflow = 'auto';
+      // document.querySelector('.App').style.overflow = 'auto';
+      document.querySelector('.App').classList.remove('freeze');
+
       document.querySelector('.hamburger').classList.remove('is-active');
       document.querySelector('.App__header').classList.remove('is-open');
-      updateSidebar(false);
+      document.querySelector('.header__menu').classList.remove('test');
+      document.querySelector('.header__social').classList.remove('test2');
+      sidebar = false;
     }
-
   }
 
   return (
@@ -49,84 +51,90 @@ function App() {
               <span className='line'></span>
             </div>
           </section>
-          {sidebar && (
-            <>
-              <ul className='header__menu'>
-                <li>
-                  <a href='#Intro' onClick={() => openMenu()}>
-                    Intro
-                  </a>
-                </li>
-                <li>
-                  <a
-                  href="#About"
-                    id='test'
-                    onClick={(e) => {
-                
 
-                      openMenu();
-                    }}
-                  >
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href='#Skills ' onClick={() => openMenu()}>
-                    My Skillset
-                  </a>
-                </li>
-                <li>
-                  <a href='#Work' onClick={() => openMenu()}>
-                    Work
-                  </a>
-                </li>
-                <li>
-                  <a href='#Contact' onClick={() => openMenu()}>
-                    Contact
-                  </a>
-                </li>
-              </ul>
-              <section className='header__social'>
-                <ul className='social__list'>
-                  <li className='list__item'>
-                    <a href='mailto: jonathan.dahnberg1@gmail.com'>
-                      <Mail className='item__icon' />
-                    </a>
-                  </li>
-                  <li className='list__item'>
-                    <a
-                      href='https://www.linkedin.com/in/jonathan-meeprong-dahnberg-5289ba174/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <Linkedin className='item__icon' />
-                    </a>
-                  </li>
-                  <li className='list__item'>
-                    <a
-                      href='https://github.com/Jonathandah'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <GitHub className='item__icon' />
-                    </a>
-                  </li>
-                </ul>
-              </section>
-            </>
-          )}
+          <ul className='header__menu'>
+            <li>
+              <a href='#Intro' onClick={() => openMenu()}>
+                Intro
+              </a>
+            </li>
+            <li>
+              <a
+                href='#About'
+                id='About'
+                onClick={(e) => {
+                  ScrollReveal().destroy();
+
+                  openMenu();
+                }}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href='#Skills'
+                id='Skills'
+                onClick={(e) => {
+                  ScrollReveal().destroy();
+
+                  openMenu();
+                }}
+              >
+                My Skillset
+              </a>
+            </li>
+            <li>
+              <a
+                href='#Work'
+                id='Work'
+                onClick={(e) => {
+                  ScrollReveal().destroy();
+
+                  openMenu();
+                }}
+              >
+                Work
+              </a>
+            </li>
+            <li>
+              <a
+                href='#Contact'
+                id='Contact'
+                onClick={(e) => {
+                  ScrollReveal().destroy();
+
+                  openMenu();
+                }}
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+          <section className='header__social'>
+            <ul className='social__list'>
+              <li className='list__item'>
+                <a href='mailto: jonathan.dahnberg1@gmail.com'>
+                  <Mail className='item__icon' />
+                </a>
+              </li>
+              <li className='list__item'>
+                <a
+                  href='https://www.linkedin.com/in/jonathan-meeprong-dahnberg-5289ba174/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Linkedin className='item__icon' />
+                </a>
+              </li>
+              <li className='list__item'>
+                <a href='https://github.com/Jonathandah' target='_blank' rel='noopener noreferrer'>
+                  <GitHub className='item__icon' />
+                </a>
+              </li>
+            </ul>
+          </section>
         </header>
-        {/* <aside className="App__sidebar">
-        {sidebar && <div className="sidebar__shading" />}
-        <div className="sidebar__content"> </div>
-
-       
-          <div className="sidebar__box" onClick={(e) => openSidebar(e)}>
-            <FontAwesomeIcon className="box__icon" icon={faAlignRight} />
-            <p className="box__text">Menu</p>
-          </div>
-        </aside> */}
-
         <main className='App__main'>
           <Route exact path='/' component={Home} />
         </main>
