@@ -1,37 +1,63 @@
+@function strip-unit($value) 
+  @return $value / ($value * 0 + 1)
+
+  
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) 
+  $u1: unit($min-vw)
+  $u2: unit($max-vw)
+  $u3: unit($min-font-size)
+  $u4: unit($max-font-size)
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 
+    & 
+      font-size: $min-font-size
+      @media screen and (min-width: $min-vw) 
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}))
+      
+      @media screen and (min-width: $max-vw) 
+        font-size: $max-font-size
+      
+    
+    
+    
+    
+    
 .Competence
     position: relative
     width: 100%
     display: grid
-    grid-template-columns: repeat(5, 20vw)
-    grid-template-rows: repeat(5, 20vh)
+    padding: 0% 4% 0% 4%
+    grid-template-columns: repeat(5, 20%)
+    grid-template-rows: repeat(4, 20vh)
     .Competence__title
         font-size: 60px
-        background: white
+        // background: white
         grid-row: 2/4
-        grid-column: 2/4
-        width: 460px       
+        grid-column: 1/4
+        width: 460px
         .title__text
-            font-size: 96px
-            color: #041552
-            font-family: Roboto
+            font-family: Roboto, sans-serif
             font-style: normal
             font-weight: bold
-            padding: 0px 10px 0px 10px
+            margin-bottom: 40px
+            line-height: 1
+            p
+                font-size: 6rem
         .title__text--sub
-            font-family: Libre Baskerville
+            font-family: Libre Baskerville, sans-serif
             font-style: italic
             font-weight: normal
-            font-size: 36px
+            font-size: 2rem
             color: #000000
-            padding: 0px 10px 10px 10px
+            padding: 0px 10px 10px 0px
         .title__text--regular
-            font-family: Roboto
+            font-family: Roboto, sans-serif
             font-style: normal
-            font-weight: bold
+            font-weight: normal
             font-size: 14px
             line-height: 16px
-            color: #D1D1D1
-            padding: 0px 10px 10px 10px
+            color: #000000
+            padding: 0px 10px 10px 0px
         // span
         //     &:nth-of-type(1)
         //         color: #000000
@@ -44,24 +70,167 @@
         list-style: none
         width: 100%
         padding: 20px 0px 0px 0px
+        grid-row: -1
+        grid-column: 1/6
+        display: flex
+        flex-direction: column
         .list__item
             display: flex
+            padding: 2% 0% 2% 0%
+            svg
+                padding: 10px 0px 10px 0px
+                font-size: 200px
+            .item__icon--react
+                color: #01d8fe
+   
+            .item__icon--vue
+                color: #000
+    
+            .item__icon--html
+                color: #eb6328
+              
+            .item__icon--css
+                color: #31a1da
+      
+            .item__icon--sass
+                color: #cd6698
+          
+            .item__icon--js
+                color: #f0da1c
+         
+            .item__icon--docker
+                color: #2592e6
+        
+            .item__icon--nodejs
+                color: #80c728
+
+            .item__icon--wordpress
+                color: #000
+            .item__icon--threejs
+                height: "180px" 
+                margin: "10px"
+
+
+
+        .--left
             justify-content: flex-start
-            .item__icon
-                font-size: 260px
-            .--react
-                color: #14DBE8
+ 
+
+        .--right
+            flex-direction: row-reverse
+            justify-content: flex-start
+
         .item__box
-            width: 700px
+            padding: 10px 20px 10px 20px
+            width: 600px
             .box__title
                 color: #000000
                 font-weight: 700
-                font-size: 55px
+                font-size: 3rem
+                padding-bottom: 10px
             .box__info
-                font-family: 'Libre Baskerville', sans-serif
-                font-style: italic
-                font-weight: 400
-                color: #848484
+                $min_width: 320px
+                $max_width: 600px
+                $min_font: 12px
+                $max_font: 16px
+                @include fluid-type($min_width, $max_width, $min_font, $max_font)
+                font-family: 'Roboto', sans-serif
+                font-weight: normal
+                color: #606060
                 span
                     color: #4A4A4A
                     font-weight: 600
+        .--rightBox
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+
+@media screen and (max-device-width: 892px) and (max-device-height: 470px) //landscape
+    .Competence
+        .Competence__title
+            grid-column: 2/5
+            width: initial
+            .title__text
+                p
+                    font-size: 3rem
+            .title__text--sub
+                font-size: 1.5rem
+            .title__text--regular
+                font-size: 12px
+                width: 320px
+        .Competence__list
+            padding: 100px 0px 0px 0px
+            display: flex
+            flex-direction: column
+            .list__item
+                position: relative
+                padding: 0
+                margin: 6%
+                img
+                    margin: 0
+                .item__box
+                    width: initial
+                    padding: 0
+                    .box__title
+                        padding-bottom: 20px
+                .--rightBox           
+            .--left
+                    svg,img
+                        font-size: 160px !important
+                        opacity: 0.2
+                        left: 50%
+                        top: 30%
+                        position: absolute
+            .--right
+                     svg,img
+                        font-size: 160px !important
+                        opacity: 0.2
+                        left: 10%
+                        top: 30%
+                        position: absolute
+
+@media screen and (max-device-width: 414px) and (max-device-height: 892px) //portrait
+    .Competence
+        padding: 0
+        .Competence__title
+            grid-row: 2/4
+            grid-column: 1/6
+            width: auto !important
+            padding: 40px
+            .title__text
+                padding: 0
+                p
+                    font-size: 3rem !important
+            .title__text--sub
+                padding: 0
+                padding-bottom: 10px
+                font-size: 1.5rem 
+            .title__text--regular
+                padding: 0
+                padding-bottom: 10px
+        .Competence__list
+            display: flex
+            flex-direction: column
+            .list__item
+                padding: 40px
+                svg
+                    display: none
+                img
+                    display: none
+                .item__box
+                    padding: 0
+                    width: auto
+                    .box__title
+                        font-size: 2.5rem
+                        padding-bottom: 20px
+                .--rightBox
+                    align-items: flex-start
+
+
+@media screen and (max-device-width: 650px)
+    .Competence
+        .Competence__title
+            width: 302px
+            .title__text
+                p
+                    font-size: 4rem

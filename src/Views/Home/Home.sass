@@ -6,7 +6,8 @@
     align-items: center
     justify-content: flex-start
     background: #f8f8f8
-
+    scroll-behavior: smooth
+    overflow-y: hidden
 .Home > section
     position: relative
     width: 100%
@@ -17,9 +18,12 @@
     // padding-bottom: 60px
     // padding-bottom: 30px //use when multiple components are loaded
 .Home >section > *:first-child
-    padding-top: 60px
+    padding-top: 100vh
     padding-bottom: 60px
     box-sizing: border-box
+.Home > section > *:last-child
+    padding-bottom: 0px
+
 .Home > section > div //add this class to all childrens in the components
     padding-bottom: 60px
     box-sizing: border-box
