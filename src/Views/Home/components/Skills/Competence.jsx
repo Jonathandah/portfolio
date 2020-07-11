@@ -110,7 +110,7 @@ function Competence() {
             <p className="box__info">
               Nautrally as a frontend developer CSS has a solid spot as one of my skills. Even
               though I'm a more logical thinking individual than I'm a creative one I've{" "}
-              <span>excellent</span>
+              <span>excellent </span>
               knowledge of how to create a responsive designs, smooth transitions and good
               structured CSS. Basically all the CSS skills a frontend devloper needs.
             </p>
@@ -135,7 +135,7 @@ function Competence() {
               creative one. Because of that I <span>enjoy</span> to create good performing
               Javascript, create functionality and optimize with solid Javascript. I always strive
               to better my code and create a long lasting structure that is simple but
-              <span>effective</span>.
+              <span> effective</span>.
             </p>
           </div>
         </li>
@@ -170,7 +170,7 @@ function Competence() {
             <h1 className="box__title">Wordpress</h1>
             <p className="box__info">
               Last but no least, Wordpress. I've got all the necessery skills to create a
-              <span>sustainable</span>, <span>sensible</span> and <span>sleek</span> looking
+              <span> sustainable</span>, <span>sensible</span> and <span>sleek</span> looking
               Wordpress-based site.
             </p>
           </div>
