@@ -76,7 +76,7 @@ function Work(props) {
   return (
     <section className="Work">
       <div className="Work__container">
-        <div className="container__title" id="Work">
+        <div className="container__title" id="work">
           <h1 className="title__text--work">
             <span className="text__section--w1">M</span>
             <span className="text__section--w2">y</span>

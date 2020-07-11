@@ -48,13 +48,13 @@ function App() {
 
           <ul className="header__menu">
             <li>
-              <a href="#Intro" onClick={() => openMenu()}>
+              <a href="#intro" onClick={() => openMenu()}>
                 Intro
               </a>
             </li>
             <li>
               <a
-                href="#About"
+                href="#about"
                 onClick={(e) => {
                   openMenu();
                 }}
@@ -64,7 +64,7 @@ function App() {
             </li>
             <li>
               <a
-                href="#Skills"
+                href="#skills"
                 onClick={(e) => {
                   openMenu();
                 }}
@@ -74,7 +74,7 @@ function App() {
             </li>
             <li>
               <a
-                href="#Work"
+                href="#work"
                 onClick={(e) => {
                   openMenu();
                 }}
@@ -84,7 +84,7 @@ function App() {
             </li>
             <li>
               <a
-                href="#Contact"
+                href="#contact"
                 onClick={(e) => {
                   openMenu();
                 }}

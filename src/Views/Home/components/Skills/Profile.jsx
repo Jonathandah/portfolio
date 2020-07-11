@@ -26,7 +26,7 @@ function Profile() {
 
   return (
     <div className='Profile'>
-      <h1 id='About' className='Profile__title'>
+      <h1 id='about' className='Profile__title'>
         <span>About</span>
         <span>
           me<span>.</span>

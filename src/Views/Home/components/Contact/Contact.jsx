@@ -34,7 +34,7 @@ function Contact(props) {
   return (
     <section className="Contact">
       <div className="Contact__container">
-        <div className="container__media" id="Contact">
+        <div className="container__media" id="contact">
           <div className="media__title">
             <p className="title__question">Want to know more?</p>
             <h1 className="title__text--contact">Get in touch with me on,</h1>
