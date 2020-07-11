@@ -79,8 +79,10 @@
             font-weight: 700
             color: black
             text-decoration: none
+            transition: all 0.5s ease
             &:hover
               cursor: pointer
+              color: red
       .show-menu
         display: block !important
       .header__social
@@ -130,8 +132,6 @@
       height: 60px
       bottom: 0
       z-index: 20
-  .freeze
-    overflow-y: hidden
 
 @keyframes showNavigation
   0%
@@ -182,7 +182,7 @@
             font-size: 1.2rem !important
       .header__social
         .social__list
-          .list__item
+          .list__item--social
             svg
               width: 18px
               height: 18px

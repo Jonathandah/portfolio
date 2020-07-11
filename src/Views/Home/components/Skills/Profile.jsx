@@ -7,13 +7,20 @@ function Profile() {
 
 
   useEffect(()=>{
-    ScrollReveal().reveal(".Profile__title", {delay: 200, distance: "200px", origin: "bottom", duration: 1000})
-    ScrollReveal().reveal(".name__title", {delay: 200, distance: "200px", origin: "top", duration: 1500})
+    ScrollReveal().reveal(".Profile__title", {delay: 200, distance: "200px", origin: "bottom", duration: 1500,  mobile: false})
+    ScrollReveal().reveal(".Profile__title", {delay: 200, distance: "200px", origin: "top", duration: 1500, desktop: false})
+    ScrollReveal().reveal(".name__title", {delay: 200, distance: "200px", origin: "top", duration: 1500, mobile: false})
+    ScrollReveal().reveal(".name__title", {delay: 200, distance: "200px", origin: "right", duration: 1500, desktop: false })
+    ScrollReveal().reveal(".box__picture", {delay: 200, distance: "200px", origin: "bottom", duration: 1500, desktop: false })
     ScrollReveal().reveal(".name__description", {delay: 200, distance: "200px", origin: "left", duration: 1500})
-    ScrollReveal().reveal(".text__section--p1", {delay: 200, distance: "200px", origin: "right", duration: 2500})
-    ScrollReveal().reveal(".text__section--p2", {delay: 200, distance: "200px", origin: "right", duration: 3000})
-    ScrollReveal().reveal(".text__section--p3", {delay: 200, distance: "200px", origin: "right", duration: 4500})
-    ScrollReveal().reveal(".text__section--p4", {delay: 200, distance: "200px", origin: "right", duration: 5000})
+
+    let boxTextChildrens = document.querySelector(".box__text").childNodes;
+    let delay = 0;
+    for (let child of boxTextChildrens){
+      ScrollReveal().reveal(child, {delay, distance: "200px", origin: "right", duration: 1000})
+      delay += 200;
+    }
+
   },[])
 
 

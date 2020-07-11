@@ -31,7 +31,6 @@
     grid-template-rows: repeat(4, 20vh)
     .Competence__title
         font-size: 60px
-        // background: white
         grid-row: 2/4
         grid-column: 1/4
         width: 460px
@@ -58,14 +57,6 @@
             line-height: 16px
             color: #000000
             padding: 0px 10px 10px 0px
-        // span
-        //     &:nth-of-type(1)
-        //         color: #000000
-        //         font-weight: 700
-        //     &:nth-of-type(2)
-        //         font-family: 'Libre Baskerville', sans-serif
-        //         font-style: italic
-        //         font-weight: 400
     .Competence__list
         list-style: none
         width: 100%
@@ -74,7 +65,7 @@
         grid-column: 1/6
         display: flex
         flex-direction: column
-        .list__item
+        .list__item--competence
             display: flex
             padding: 2% 0% 2% 0%
             svg
@@ -148,8 +139,10 @@
 @media screen and (max-device-width: 1000px) and (max-device-height: 480px) //landscape
     .Competence
         .Competence__title
-            grid-column: 2/5
-            width: initial
+            grid-row: 2/4
+            grid-column: 1/6
+            width: auto !important
+            margin: 6%
             .title__text
                 p
                     font-size: 3rem
@@ -157,12 +150,12 @@
                 font-size: 1.5rem
             .title__text--regular
                 font-size: 12px
-                width: 320px
+                width: 200px
         .Competence__list
             padding: 100px 0px 0px 0px
             display: flex
             flex-direction: column
-            .list__item
+            .list__item--competence
                 position: relative
                 padding: 0
                 margin: 6%
@@ -211,7 +204,7 @@
         .Competence__list
             display: flex
             flex-direction: column
-            .list__item
+            .list__item--competence
                 padding: 40px
                 svg
                     display: none
