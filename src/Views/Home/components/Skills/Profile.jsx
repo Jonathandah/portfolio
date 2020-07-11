@@ -60,7 +60,7 @@ function Profile() {
           <br></br>
           <p className="text__section--p3">
             With my knowledge in devloping high end frontend applications, where design,
-            responsitivity and performance matters I'm hoping that we together can creat amazing
+            responsitivity and performance matters I'm hoping that we together can create amazing
             things.
           </p>
           <br></br>
