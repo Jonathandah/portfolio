@@ -167,11 +167,11 @@ function Competence() {
         <li className="list__item--competence --right" style={{ gridArea: "19 / 1 / 21 / 9" }}>
           <FontAwesomeIcon className="item__icon--wordpress" icon={["fab", "wordpress"]} />
           <div className="item__box --rightBox">
-            <h1 className="box__title">Wordpress</h1>
+            <h1 className="box__title">WordPress</h1>
             <p className="box__info">
-              Last but no least, Wordpress. I've got all the necessery skills to create a
+              Last but no least, WordPress. I've got all the necessery skills to create a
               <span> sustainable</span>, <span>sensible</span> and <span>sleek</span> looking
-              Wordpress-based site.
+              WordPress-based site.
             </p>
           </div>
         </li>
