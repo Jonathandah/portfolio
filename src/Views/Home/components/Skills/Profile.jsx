@@ -90,7 +90,7 @@ function Profile() {
           <br></br>
           <br></br>
           <p className="text__section--p3">
-            With my knowledge in developing high end frontend applications, there design,
+            With my knowledge in developing high end frontend applications, where design,
             responsitivity and performance matters I'm hoping that we together can create amazing
             things.
           </p>
