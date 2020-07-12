@@ -26,12 +26,11 @@
     position: relative
     width: 100%
     display: grid
-    padding: 0% 4% 0% 4%
+    padding: 0% 6% 0% 6%
     grid-template-columns: repeat(5, 20%)
     grid-template-rows: repeat(4, 20vh)
     .Competence__title
         font-size: 60px
-        // background: white
         grid-row: 2/4
         grid-column: 1/4
         width: 460px
@@ -58,14 +57,6 @@
             line-height: 16px
             color: #000000
             padding: 0px 10px 10px 0px
-        // span
-        //     &:nth-of-type(1)
-        //         color: #000000
-        //         font-weight: 700
-        //     &:nth-of-type(2)
-        //         font-family: 'Libre Baskerville', sans-serif
-        //         font-style: italic
-        //         font-weight: 400
     .Competence__list
         list-style: none
         width: 100%
@@ -74,7 +65,7 @@
         grid-column: 1/6
         display: flex
         flex-direction: column
-        .list__item
+        .list__item--competence
             display: flex
             padding: 2% 0% 2% 0%
             svg
@@ -109,9 +100,6 @@
             .item__icon--threejs
                 height: "180px" 
                 margin: "10px"
-
-
-
         .--left
             justify-content: flex-start
  
@@ -121,7 +109,7 @@
             justify-content: flex-start
 
         .item__box
-            padding: 10px 20px 10px 20px
+            padding: 10px 0px 10px 20px
             width: 600px
             .box__title
                 color: #000000
@@ -145,11 +133,13 @@
             flex-direction: column
             align-items: flex-end
 
-@media screen and (max-device-width: 892px) and (max-device-height: 470px) //landscape
+@media screen and (max-width: 1000px) and (max-height: 480px) //landscape
     .Competence
         .Competence__title
-            grid-column: 2/5
-            width: initial
+            grid-row: 2/4
+            grid-column: 1/6
+            width: auto !important
+            margin: 6%
             .title__text
                 p
                     font-size: 3rem
@@ -157,12 +147,12 @@
                 font-size: 1.5rem
             .title__text--regular
                 font-size: 12px
-                width: 320px
+                width: 200px
         .Competence__list
             padding: 100px 0px 0px 0px
             display: flex
             flex-direction: column
-            .list__item
+            .list__item--competence
                 position: relative
                 padding: 0
                 margin: 6%
@@ -189,14 +179,15 @@
                         top: 30%
                         position: absolute
 
-@media screen and (max-device-width: 414px) and (max-device-height: 892px) //portrait
+@media screen and (max-width: 480px) and (max-height: 1000px) //portrait
     .Competence
         padding: 0
+        display: block
         .Competence__title
-            grid-row: 2/4
-            grid-column: 1/6
             width: auto !important
             padding: 40px
+            padding-bottom: 0
+            padding-top: 20vh
             .title__text
                 padding: 0
                 p
@@ -211,7 +202,7 @@
         .Competence__list
             display: flex
             flex-direction: column
-            .list__item
+            .list__item--competence
                 padding: 40px
                 svg
                     display: none
@@ -227,7 +218,7 @@
                     align-items: flex-start
 
 
-@media screen and (max-device-width: 650px)
+@media screen and (max-width: 650px)
     .Competence
         .Competence__title
             width: 302px

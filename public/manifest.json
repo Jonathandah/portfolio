@@ -1,8 +1,12 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dahnberg",
+  "name": "Dahnberg | Portfolio",
   "icons": [
-
+    {
+      "src": "JD-logo.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
   ],
   "start_url": ".",
   "display": "standalone",
