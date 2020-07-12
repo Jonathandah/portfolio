@@ -26,7 +26,7 @@
     position: relative
     width: 100%
     display: grid
-    padding: 0% 4% 0% 4%
+    padding: 0% 6% 0% 6%
     grid-template-columns: repeat(5, 20%)
     grid-template-rows: repeat(4, 20vh)
     .Competence__title
@@ -109,7 +109,7 @@
             justify-content: flex-start
 
         .item__box
-            padding: 10px 20px 10px 20px
+            padding: 10px 0px 10px 20px
             width: 600px
             .box__title
                 color: #000000
@@ -133,7 +133,7 @@
             flex-direction: column
             align-items: flex-end
 
-@media screen and (max-device-width: 1000px) and (max-device-height: 480px) //landscape
+@media screen and (max-width: 1000px) and (max-height: 480px) //landscape
     .Competence
         .Competence__title
             grid-row: 2/4
@@ -179,15 +179,15 @@
                         top: 30%
                         position: absolute
 
-@media screen and (max-device-width: 480px) and (max-device-height: 1000px) //portrait
+@media screen and (max-width: 480px) and (max-height: 1000px) //portrait
     .Competence
         padding: 0
-        // grid-template-rows: repeat(3, 20vh)
+        display: block
         .Competence__title
-            grid-row: 2/4
-            grid-column: 1/6
             width: auto !important
             padding: 40px
+            padding-bottom: 0
+            padding-top: 20vh
             .title__text
                 padding: 0
                 p
@@ -218,7 +218,7 @@
                     align-items: flex-start
 
 
-@media screen and (max-device-width: 650px)
+@media screen and (max-width: 650px)
     .Competence
         .Competence__title
             width: 302px
