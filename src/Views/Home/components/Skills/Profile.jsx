@@ -35,7 +35,7 @@ function Profile() {
       delay += 200;
     }
 
-    let rellax = new Rellax(".rellax", {
+    new Rellax(".rellax", {
       center: false,
       speed: "6"
     });
