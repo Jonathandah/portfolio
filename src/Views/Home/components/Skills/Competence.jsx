@@ -58,10 +58,10 @@ function Competence() {
             <h1 className="box__title">ReactJS</h1>
             <p className="box__info">
               ReactJS is my biggest strength as a developer. It's my preferred framework to develop
-              in, mainly because I think it's powerfull and versatile.
+              in, mainly because I think it's powerful and versatile.
               <br></br>
               <br></br>I<span> enjoy</span> to develop in React and it's the framework I feel most
-              <span> confident</span> in. Most of the projects I've done is made in React.
+              <span> confident</span> in. Most of the projects I've done are made in React.
             </p>
           </div>
         </li>
@@ -70,9 +70,9 @@ function Competence() {
           <div className="item__box --rightBox">
             <h1 className="box__title">VueJS</h1>
             <p className="box__info">
-              I would say that I got good basic knowledge in Vue. Even if isn't my "go to" framework
+              I would say that I have good basic knowledge in Vue. Even if it isn't my "go to" framework
               I've the knowledge to create <span>basic</span> and <span>functional</span> projects.
-              Hopfully I'll start to do more of my projects in Vue since I enjoy to use it.
+              Hopefully I'll start to do more of my projects in Vue since I enjoy to use it.
             </p>
           </div>
         </li>
@@ -82,7 +82,7 @@ function Competence() {
             <h1 className="box__title">ThreeJS</h1>
             <p className="box__info">
               3D rendering has been very close to my heart for a while now. I <span>enjoy</span> to
-              create anything from simple 3D models to a more advanced interactive 3D enviroment. To
+              create anything from simple 3D models to a more advanced interactive 3D environment. To
               accomplish this I've worked a lot with the library <span>ThreeJS</span> which is based
               on <span>WebGl</span> and makes it possible to render 3D objects on web-based
               applications.
@@ -97,7 +97,7 @@ function Competence() {
           <div className="item__box --rightBox">
             <h1 className="box__title">HTML</h1>
             <p className="box__info">
-              As a frontend developer I have all the necessery skills to create a{" "}
+              As a frontend developer I have all the necessary skills to create a{" "}
               <span>structured</span>, sensible and
               <span> highly</span> functional HTML.
             </p>
@@ -108,11 +108,11 @@ function Competence() {
           <div className="item__box">
             <h1 className="box__title">CSS</h1>
             <p className="box__info">
-              Nautrally as a frontend developer CSS has a solid spot as one of my skills. Even
+              Naturally as a frontend developer CSS has a solid spot as one of my skills. Even
               though I'm a more logical thinking individual than I'm a creative one I've{" "}
               <span>excellent </span>
-              knowledge of how to create a responsive designs, smooth transitions and good
-              structured CSS. Basically all the CSS skills a frontend devloper needs.
+              knowledge of how to create responsive designs, smooth transitions and good
+              structured CSS. Basically all the CSS skills a frontend developer needs.
             </p>
           </div>
         </li>
@@ -122,7 +122,7 @@ function Competence() {
             <h1 className="box__title">SASS</h1>
             <p className="box__info">
               My personal <span>preference</span> to style my HTML is to style it through SASS since
-              I prefer it's way of structuring selected elements.
+              I prefer its way of structuring selected elements.
             </p>
           </div>
         </li>
@@ -144,8 +144,8 @@ function Competence() {
           <div className="item__box  --rightBox">
             <h1 className="box__title">Docker</h1>
             <p className="box__info">
-              Docker is one skill that I have but unfortunately not using very often. I've good
-              basic knowledge of using it, to create enviroments and host apllciations in it. Would
+              Docker is one skill I have but unfortunately is one I'm not using very often. I've good
+              basic knowledge of using it, to create environments and host applications in it. Would
               love to work more with Docker in the future.
             </p>
           </div>
@@ -155,12 +155,12 @@ function Competence() {
           <div className="item__box">
             <h1 className="box__title">NodeJS</h1>
             <p className="box__info">
-              Durring my time as a frontend developer I've used NodeJS quite a lot. If you need
+              During my time as a front-end developer I've used NodeJS quite a lot. If you need
               something built in NodeJS, <span>I'm the guy</span>. I've good understanding of how to
               use it and when to use it.
               <br></br>
               <br></br>
-              Hopfully that's enough ;).
+              Hopefully that's enough ;).
             </p>
           </div>
         </li>
@@ -169,7 +169,7 @@ function Competence() {
           <div className="item__box --rightBox">
             <h1 className="box__title">WordPress</h1>
             <p className="box__info">
-              Last but no least, WordPress. I've got all the necessery skills to create a
+              Last but not least, WordPress. I've got all the necessary skills to create a
               <span> sustainable</span>, <span>sensible</span> and <span>sleek</span> looking
               WordPress-based site.
             </p>

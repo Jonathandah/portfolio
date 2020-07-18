@@ -89,7 +89,7 @@ function Work(props) {
           </h1>
 
           <p className="title__text--regular">
-            All my work as a frontend developer, contains a mix of projects for companies and me
+            All my work as a front-end developer, contains a mix of projects for companies and me
             messing around.
           </p>
         </div>
@@ -104,7 +104,7 @@ function Work(props) {
                 <span className="title__section--3">Models</span>
               </h2>
               <p className="box__description">
-                This project will be a project is one made for AniCura which is a company that runs
+                This project is one made for AniCura which is a company that runs
                 numerous animal clinics in Sweden. Their idea was to build a webb application that
                 can help both veterinarians and customers to understand dog's and cat’s anatomies
                 better. They have the vision to inspect 3D models through an application to educate
@@ -113,7 +113,7 @@ function Work(props) {
                 AniCura’s primary focus.
                 <br></br>
                 <br></br>
-                This project is based on ThreeJS to render 3D models and I using React as framework.
+                This project is based on ThreeJS to render 3D models and is using React as framework.
                 <br></br>
                 <br></br>
                 Note: This a demo and is still missing some functionality.
