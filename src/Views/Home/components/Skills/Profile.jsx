@@ -34,11 +34,6 @@ function Profile() {
       ScrollReveal().reveal(child, { delay, distance: "200px", origin: "right", duration: 1000, desktop: false });
       delay += 200;
     }
-
-    new Rellax(".rellax", {
-      center: false,
-      speed: "6"
-    });
   }, []);
 
   return (
@@ -51,7 +46,7 @@ function Profile() {
       </h1>
       <div className="Profile__box">
       <img className="box__picture rellax" src={pic} alt="Me sitting on a cliff" data-rellax-speed="-1"></img>
-        <section className="box__section rellax">
+        <section className="box__section rellax" data-rellax-speed="6">
           <h2 className="section__name"  >
             <span >Jonathan</span>
             <span >Dahnberg</span>

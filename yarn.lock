@@ -6469,6 +6469,16 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+lord-icon-element@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/lord-icon-element/-/lord-icon-element-1.2.3.tgz#905f8f53c3e43b7b58d04cdbdf2d968e863f692e"
+  integrity sha512-lJHsVJJn49F6U0SP4V+6Fma8JPcA49z47Jqh4owhTL2ghGMOge1Z5FbKA332zBFqmbm4Q+KB+E+suWP45JD5RA==
+
+lottie-web@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.7.0.tgz#628421df7a43c20a5171ac65bdc7bb4c499f8f37"
+  integrity sha512-mCj9KaVR1FdcaRuKB0oqKqC2R+awlqGgx38Sy4q3H0+aNPJ9Ut5LIvBNGyMHiZRpJlPcRQ1Mk//fp2bY3QYq1A==
+
 lower-case@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-2.0.1.tgz#39eeb36e396115cc05e29422eaea9e692c9408c7"
