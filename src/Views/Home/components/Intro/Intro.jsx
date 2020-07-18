@@ -19,15 +19,15 @@ function Intro() {
       <div className='Intro__container'>
         <div className='container__firstSection'>
           <div>
-            <p className='firstSection__text rellax' >Hello</p>
-            <p className='firstSection__text rellax'>
+            <p className='firstSection__text' >Hello</p>
+            <p className='firstSection__text'>
               I'm <span>Jonathan</span>,
             </p>
           </div>
         </div>
         <div className='container__secondSection'>
           <div>
-            <p className='secondSection__text rellax'>
+            <p className='secondSection__text'>
               a <span>frontend</span> <span>developer</span>
               <span>.</span>
             </p>
