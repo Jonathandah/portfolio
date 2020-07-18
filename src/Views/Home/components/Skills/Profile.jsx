@@ -56,13 +56,13 @@ function Profile() {
           <br></br>
           <br></br>
           <p className="text__section">
-            I'm Jonathan, 22 years old, and I'm a graduated front-end developer from EC Utbildning.
+            I'm Jonathan, 22 years old, and I'm a graduated frontend developer from EC Utbildning.
             I'm a regular guy who enjoys to stay active, code and have a great time!
           </p>
           <br></br>
           <br></br>
           <p className="text__section">
-            With my knowledge in developing high end front-end applications, where design,
+            With my knowledge in developing high end frontend applications, where design,
             responsitivity and performance matters I'm hoping that we together can create amazing
             things.
           </p>

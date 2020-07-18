@@ -89,7 +89,7 @@ function Work(props) {
           </h1>
 
           <p className="title__text--regular">
-            All my work as a front-end developer, contains a mix of projects for companies and me
+            All my work as a frontend developer, contains a mix of projects for companies and me
             messing around.
           </p>
         </div>

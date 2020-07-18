@@ -155,7 +155,7 @@ function Competence() {
           <div className="item__box">
             <h1 className="box__title">NodeJS</h1>
             <p className="box__info">
-              During my time as a front-end developer I've used NodeJS quite a lot. If you need
+              During my time as a frontend developer I've used NodeJS quite a lot. If you need
               something built in NodeJS, <span>I'm the guy</span>. I've good understanding of how to
               use it and when to use it.
               <br></br>
